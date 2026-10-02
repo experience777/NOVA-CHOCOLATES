@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NOVA Chocolate | Chocolate &amp; Confections</title>
+<meta name="description" content="Explore NOVA's curated demo collection of dark cacao bars, creamy chocolate, confections and giftable favourites.">
+<meta name="theme-color" content="#f4eee3">
+<meta property="og:title" content="NOVA Chocolate | Chocolate &amp; Confections">
+<meta property="og:description" content="A considered collection of chocolate for every mood.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4eee3;--card:#faf6ee;--ink:#2a1a13;--mut:#8b7c6f;--line:#e5dac8;--dk:#2a1a13;--tan:#d9ccb7;--serif:'Playfair Display','Iowan Old Style',Georgia,serif;--sans:Inter,system-ui,-apple-system,'Segoe UI',sans-serif;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit;margin:0}
+body{background:var(--bg);color:var(--ink);font:400 13px/1.55 var(--sans);-webkit-font-smoothing:antialiased;padding-bottom:78px}
+button{font:inherit;color:inherit}
+svg{display:block}
+img{display:block;width:100%;height:100%;object-fit:cover}
+.w{max-width:1080px;margin:0 auto;padding:0 18px}
+
+/* header */
+.hd{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:10px 12px 8px}
+.hd>div{display:flex;align-items:center;gap:2px}.hd>div:last-child{justify-content:flex-end}
+.logo{display:block;font:500 19px/1.1 var(--serif);letter-spacing:.3em;text-align:center;padding-left:.3em;cursor:pointer}
+.logo small{display:block;font:500 5.5px var(--sans);letter-spacing:.34em;color:var(--mut);margin-top:4px;padding-left:.1em}
+.ib{background:none;border:0;padding:8px;position:relative;cursor:pointer;display:grid}
+.ib svg{width:21px;height:21px}
+.ib.fv.on svg{fill:var(--ink)}
+.bc{position:absolute;right:2px;top:2px;background:var(--dk);color:var(--bg);font:600 8px var(--sans);min-width:14px;height:14px;border-radius:7px;display:grid;place-items:center;padding:0 3px}
+.dn{display:none;gap:26px;font-size:12.5px}.dn button{background:none;border:0;cursor:pointer;color:var(--mut)}.dn button:hover{color:var(--ink)}
+.hleft,.hright{display:flex;align-items:center}.hleft{gap:14px}.hright{justify-content:flex-end;gap:2px}.hd:after{content:'FREE DELIVERY ON ORDERS OVER ₹999';position:absolute;left:0;right:0;bottom:-25px;text-align:center;font:500 8px/25px var(--sans);letter-spacing:.16em;color:var(--mut);border-top:1px solid var(--line);background:var(--bg)}
+@media(min-width:860px){.hd{grid-template-columns:1fr auto 1fr;padding:16px 28px 14px;min-height:68px}.dn{display:flex}.hd:after{bottom:-27px;line-height:27px}.logo{font-size:21px}.logo small{font-size:6px;letter-spacing:.28em}.hleft,.hright{min-width:260px}.hleft .mb{display:none}}
+@media(max-width:859px){.hd:after{display:none}.logo{font-size:20px}.logo small{font-size:5px}.hleft,.hright{gap:0}}
+
+.fd{animation:f .3s ease}@keyframes f{from{opacity:0}}
+@media(max-width:859px){.hd.pv .logo{visibility:hidden}}
+
+/* hero */
+.hero{position:relative;margin:0 -18px;padding:22px 18px 0;min-height:590px;overflow:hidden}
+.ht{position:relative;z-index:2}
+.lab,.ht small{font:500 8px var(--sans);letter-spacing:.2em;color:var(--mut);text-transform:uppercase}
+h1,h2,h3{font-family:var(--serif);font-weight:400}
+.ht h1{font-size:clamp(28px,8.8vw,36px);line-height:1.1;letter-spacing:.015em;text-transform:uppercase;margin:12px 0 14px}
+.ht p{max-width:228px;color:#6f6055;font-size:12.5px;line-height:1.55}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--dk);color:var(--bg);border:0;border-radius:6px;padding:12px 18px;font:500 12px var(--sans);cursor:pointer;margin-top:18px}
+.btn:hover{background:#3a261c}.btn svg{width:14px;height:14px}
+.hi{position:absolute;inset:0;z-index:0;-webkit-mask:linear-gradient(to bottom,transparent 0,#000 30%,#000 94%,transparent 100%);mask:linear-gradient(to bottom,transparent 0,#000 30%,#000 94%,transparent 100%)}
+.hi svg,.ph svg,.pm svg,.si svg,.th svg{width:100%;height:100%}
+.hdk{display:none}
+
+/* story card */
+.sc{position:relative;overflow:hidden;border-radius:12px;background:var(--card);border:1px solid var(--line);min-height:150px;margin-top:14px;box-shadow:0 8px 24px rgba(60,35,20,.07)}
+.sc .tx{position:relative;z-index:2;width:62%;padding:20px 0 20px 18px}
+.sc h3{font-size:19px;line-height:1.2;margin:7px 0 8px}.sc p{color:#76675b;font-size:11.5px;line-height:1.5}
+.si{position:absolute;right:0;top:0;bottom:0;width:66%;z-index:1;-webkit-mask:linear-gradient(to right,transparent 0,#000 52%);mask:linear-gradient(to right,transparent 0,#000 52%)}
+.ar{position:absolute;right:12px;bottom:12px;z-index:3;width:30px;height:30px;border-radius:50%;background:var(--card);border:0;display:grid;place-items:center;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.2)}.ar svg{width:13px;height:13px}
+.sh{display:flex;justify-content:space-between;align-items:baseline;margin:34px 0 14px}
+.sh h2{font-size:22px}.sh button{background:none;border:0;font-size:11.5px;color:var(--mut);cursor:pointer;display:flex;gap:5px;align-items:center}.sh button svg{width:12px;height:12px}
+
+/* grid + cards */
+.g{display:grid;grid-template-columns:1fr 1fr;gap:20px 12px}
+.card{cursor:pointer}
+.ph{aspect-ratio:1/1.13;position:relative;border-radius:10px;overflow:hidden;background:var(--tan)}
+.tag{position:absolute;left:8px;top:8px;background:rgba(74,48,34,.9);color:#f3e8d6;font:500 8.5px var(--sans);letter-spacing:.03em;padding:3px 7px;border-radius:4px}
+.fav{position:absolute;right:8px;top:8px;background:rgba(250,246,238,.92);border:0;border-radius:50%;width:27px;height:27px;display:grid;place-items:center;cursor:pointer}
+.fav svg{width:13px;height:13px}.fav.on svg{fill:var(--ink)}
+.cb{padding:10px 2px 0}.ce{display:block;font:500 8px var(--sans);letter-spacing:.14em;color:var(--mut);margin-bottom:4px}.cb h3{font:500 13.5px/1.25 var(--sans);letter-spacing:0}
+.cb p{font-size:10.5px;color:var(--mut);margin:2px 0 6px}.cb b{font-weight:600;font-size:13px}
+
+/* shop */
+.sp0{padding-top:8px}.sp0 h1{font-size:30px;line-height:1.15;margin:0 0 5px}.sp0>p{color:var(--mut);font-size:12px;margin-bottom:16px}
+.srch{width:100%;height:42px;border:1px solid var(--line);border-radius:6px;background:var(--card);padding:0 12px;font:400 16px var(--sans);color:var(--ink);margin-bottom:12px}
+.srch:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.chs{display:flex;gap:8px;overflow-x:auto;padding:2px 0 18px;scrollbar-width:none}.chs::-webkit-scrollbar{display:none}
+.c{border:1px solid var(--line);background:none;border-radius:6px;padding:8px 15px;font:500 11.5px var(--sans);cursor:pointer;white-space:nowrap;color:#5d4d42}
+.c.on{background:var(--dk);color:var(--bg);border-color:var(--dk)}
+.none{grid-column:1/-1;color:var(--mut);padding:18px 0}
+
+/* product */
+.pd{display:grid;gap:20px;padding-top:2px}
+.gal{display:grid;grid-template-columns:1fr 54px;gap:8px;align-content:start}
+.pm{border-radius:10px;overflow:hidden;aspect-ratio:1/.98;background:var(--tan)}
+.th{display:flex;flex-direction:column;gap:8px}
+.th button{border:1.5px solid transparent;border-radius:7px;overflow:hidden;padding:0;aspect-ratio:1;background:var(--tan);cursor:pointer}.th button.on{border-color:var(--ink)}
+.dots{grid-column:1;display:flex;justify-content:center;gap:6px;margin-top:2px}.dots i{width:5px;height:5px;border-radius:50%;background:#cbbda9}.dots i.on{background:var(--ink)}
+.in h1{font-size:26px;line-height:1.15;margin:0 0 4px}
+.rt{font-size:11.5px;color:var(--mut)}.pr{font-size:18px;font-weight:600;margin:8px 0 10px}
+.in>p{color:#6f6055;font-size:12.5px;margin-bottom:16px;max-width:46ch}
+.r{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:13px 0;border-top:1px solid var(--line);font-size:12px}
+.r>span:first-child{color:var(--mut);flex:none}.r div{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.r>span:last-child{text-align:right}
+.o{border:1px solid var(--line);background:none;border-radius:6px;padding:7px 13px;font:500 11.5px var(--sans);cursor:pointer;color:#5d4d42}.o.on{background:var(--dk);color:var(--bg);border-color:var(--dk)}
+.q{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:6px;background:var(--card);margin:0 0 12px}.q button{background:none;border:0;width:38px;height:40px;cursor:pointer;display:grid;place-items:center}.q svg{width:12px;height:12px}.q span{min-width:28px;text-align:center;font-weight:500}
+.add{width:100%;display:flex;justify-content:space-between;align-items:center;background:var(--dk);color:var(--bg);border:0;border-radius:6px;padding:0 18px;font:500 12.5px var(--sans);cursor:pointer;height:46px}.add:hover{background:#3a261c}.add i{display:flex;align-items:center;gap:10px;font-style:normal}.add svg{width:16px;height:16px}
+.su{display:grid;grid-template-columns:repeat(3,1fr);text-align:center;margin-top:26px;padding-top:18px;border-top:1px solid var(--line);color:var(--mut);font-size:10px;line-height:1.35}
+.su div{padding:0 8px}.su div+div{border-left:1px solid var(--line)}
+.su svg{width:22px;height:22px;margin:0 auto 7px;color:var(--ink)}
+
+
+/* shop tools */
+.tools{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:0 0 16px;font-size:11.5px;color:var(--mut)}
+.sel{appearance:none;-webkit-appearance:none;border:1px solid var(--line);background:var(--card) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M3 4.5l3 3 3-3' fill='none' stroke='%238b7c6f' stroke-width='1.2'/%3E%3C/svg%3E") no-repeat right 8px center/12px;border-radius:6px;padding:7px 28px 7px 11px;font:500 11.5px var(--sans);color:#5d4d42;cursor:pointer}
+.sel:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+/* product details */
+.buy{border-top:1px solid var(--line);padding-top:16px}
+.dt{margin-top:6px}
+.r.col{flex-direction:column;align-items:flex-start;gap:3px}.r.col>span:last-child{text-align:left;color:var(--ink);line-height:1.5}
+/* home sections */
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:20px 12px}
+.tile{background:none;border:0;padding:0;text-align:left;cursor:pointer;display:block}
+.tile .ph{aspect-ratio:1/.9}
+.tile b{display:block;font:500 13.5px var(--sans);margin-top:9px}.tile span{font-size:10.5px;color:var(--mut)}
+.sw{margin-top:44px}.sw h2{font-size:22px;margin-bottom:6px}.sw>div>p{color:#76675b;font-size:12px;max-width:34ch;margin-bottom:16px}
+.sl{border-top:1px solid var(--line)}
+.sr{display:grid;grid-template-columns:1fr 78px 36px;gap:12px;align-items:center;width:100%;background:none;border:0;border-bottom:1px solid var(--line);padding:13px 0;cursor:pointer;text-align:left;font-size:12.5px}
+.sr .sn{font-weight:500}.sr .sn small{display:block;font-size:10.5px;color:var(--mut);font-weight:400}
+.sbar{height:3px;background:var(--line);position:relative}.sbar i{position:absolute;left:0;top:0;bottom:0;background:var(--dk)}
+.sr .sp{text-align:right;font-weight:500}
+.stp{display:grid;grid-template-columns:1fr 1fr;gap:0 18px}
+.stp div{padding:14px 0 18px;border-top:1px solid var(--line)}
+.stp i{font:400 20px/1 var(--serif);font-style:normal;color:var(--mut)}
+.stp h3{font:500 13.5px var(--sans);margin:12px 0 4px}.stp p{font-size:11.5px;color:#76675b;line-height:1.5}
+.fx{margin-top:52px;padding:26px 0 8px;border-top:1px solid var(--line);text-align:center}
+.fx nav{display:flex;justify-content:center;gap:22px;margin:18px 0 14px}.fx nav button{background:none;border:0;cursor:pointer;font-size:11.5px;color:var(--mut)}
+.fx p{font-size:10px;color:var(--mut);letter-spacing:.08em}
+
+/* nav + sheet */
+.bn{position:fixed;left:0;right:0;bottom:0;z-index:6;background:var(--bg);border-top:1px solid var(--line);box-shadow:0 -6px 18px rgba(60,35,20,.05);display:grid;grid-template-columns:repeat(4,1fr);padding:9px 0 calc(9px + env(safe-area-inset-bottom,0px))}
+.bn button{background:none;border:0;display:grid;justify-items:center;gap:4px;font:500 9.5px var(--sans);color:#9a8b7e;cursor:pointer}.bn button.on{color:var(--ink);font-weight:600}.bn svg{width:21px;height:21px}.bn button.on svg{stroke-width:2}
+#sheet{position:fixed;inset:0;background:rgba(36,21,14,.38);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);display:flex;align-items:flex-end;z-index:9;visibility:hidden;opacity:0;pointer-events:none;transition:opacity .28s ease-out,visibility 0s linear .28s}#sheet.open{visibility:visible;opacity:1;pointer-events:auto;transition:opacity .28s ease-out,visibility 0s}
+.sb{background:var(--bg);width:100%;max-width:520px;margin:0 auto;border-radius:14px 14px 0 0;padding:20px 18px calc(24px + env(safe-area-inset-bottom,0px));max-height:80%;overflow:auto;animation:none;transform:translateY(100%);transition:transform .32s cubic-bezier(.22,.8,.3,1)}#sheet.open .sb{transform:none}
+.sb h2{font-size:22px;margin-bottom:8px}.sb .ln{display:flex;justify-content:space-between;gap:12px;padding:11px 0;border-top:1px solid var(--line)}.sb .ln small{color:var(--mut);display:block}
+.sb .ln button{background:none;border:0;color:var(--mut);font-size:11px;text-decoration:underline;cursor:pointer;padding:0;margin-top:2px}
+.sb .mk{display:block;width:100%;text-align:left;background:none;border:0;border-top:1px solid var(--line);padding:14px 0;font:400 20px var(--serif);cursor:pointer}
+button:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+
+@media(min-width:860px){
+body{padding-bottom:0}.bn{display:none}.dn{display:flex}.mb{display:none}
+.hd{padding:20px 32px}.logo{font-size:23px}
+.hero{display:grid;grid-template-columns:1fr 1.15fr;gap:48px;align-items:center;margin:0;padding:28px 0 0;min-height:0;overflow:visible}
+.ht h1{font-size:54px;margin:14px 0 18px}.ht p{max-width:340px;font-size:14.5px}.lab,.ht small{font-size:10px}.btn{padding:14px 24px;font-size:12.5px;margin-top:22px}
+.hi{position:relative;inset:auto;height:560px;border-radius:12px;overflow:hidden;-webkit-mask:none;mask:none;box-shadow:0 18px 44px rgba(60,35,20,.14)}
+.hm{display:none}.hdk{display:block}
+.sc{margin-top:32px;min-height:190px}.sc .tx{width:50%;padding:30px 0 30px 30px}.sc h3{font-size:28px}.sc p{font-size:13.5px;max-width:42ch}.si{width:56%}
+.g,.g.f{grid-template-columns:repeat(4,1fr);gap:30px 20px}
+.cb h3{font-size:15px}.cb p{font-size:12px}.cb b{font-size:14px}
+.sp0 h1{font-size:44px}.sp0>p{font-size:14px}.srch{max-width:360px}
+.tiles{grid-template-columns:repeat(4,1fr);gap:30px 20px}
+.sw{display:grid;grid-template-columns:1fr 1.7fr;gap:64px;margin-top:64px}
+.stp{grid-template-columns:repeat(4,1fr);gap:0 32px}
+.cb h3{font-size:15px}
+.pd{grid-template-columns:1.05fr 1fr;gap:64px;padding-top:12px}.in h1{font-size:38px}.pr{font-size:22px}.in>p{font-size:14px}
+.gal{grid-template-columns:1fr 72px}.th{gap:10px}
+.q{width:132px;justify-content:space-between}
+}
+
+/* editorial / photo-grade refinement */
+.ph,.pm,.si,.hi,.th button{box-shadow:0 14px 34px rgba(42,26,19,.08)}
+.ph,.pm,.si,.hi{isolation:isolate}
+.ph::after,.pm::after,.si::after,.hi::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:4;opacity:.18;background:linear-gradient(115deg,rgba(255,255,255,.16),transparent 28%,transparent 72%,rgba(25,12,7,.08));mix-blend-mode:soft-light}
+.ph::before,.pm::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:3;background:radial-gradient(circle at 25% 18%,rgba(255,255,255,.12),transparent 35%),radial-gradient(circle at 78% 84%,rgba(31,15,8,.10),transparent 38%);mix-blend-mode:soft-light}
+.ph svg,.pm svg,.si svg,.hi svg{filter:saturate(.94) contrast(1.035)}
+.hero{border-bottom:1px solid rgba(229,218,200,.55)}
+.ht h1{max-width:9ch}
+.btn{box-shadow:0 8px 18px rgba(42,26,19,.13);transition:transform .18s ease,background .18s ease}
+.btn:hover{transform:translateY(-1px)}
+.card .ph{transition:transform .22s ease,box-shadow .22s ease}.card:hover .ph{transform:translateY(-2px);box-shadow:0 18px 38px rgba(42,26,19,.12)}
+.tile .ph{box-shadow:0 12px 28px rgba(42,26,19,.07)}
+/* desktop editorial layout */
+@media(min-width:860px){
+ body{padding-bottom:0}
+ .w{max-width:1240px;padding:0 34px}
+ .hd{position:sticky;padding:18px 34px 14px;grid-template-columns:1fr auto 1fr;border-bottom:1px solid rgba(229,218,200,.55)}
+ .dn{display:flex}.mb{display:none}
+ .logo{font-size:22px}
+ .hero{margin:0 -34px;padding:70px 34px 0;min-height:680px;display:grid;grid-template-columns:minmax(300px,.8fr) minmax(500px,1.2fr);align-items:center;gap:40px}
+ .ht{padding-left:7vw;max-width:470px}
+ .ht h1{font-size:clamp(52px,6.5vw,84px);max-width:8ch;line-height:.98;margin:16px 0 20px}
+ .ht p{max-width:360px;font-size:14px;line-height:1.7}
+ .hi{position:relative;inset:auto;height:620px;margin-right:-34px}
+ .hdk{display:none}
+ .sc{min-height:220px;margin-top:30px}.sc .tx{padding:32px;width:48%}.sc h3{font-size:27px}.sc p{font-size:13px;max-width:35ch}.si{width:60%}
+ .sh{margin:62px 0 20px}.sh h2,.sw h2{font-size:28px}
+ .g{grid-template-columns:repeat(4,1fr);gap:34px 18px}.g.f{gap:28px 18px}
+ .tiles{grid-template-columns:repeat(4,1fr);gap:18px}
+ .tile .ph{aspect-ratio:1/.82}
+ .sw{margin-top:76px}.sw>div>p{font-size:13px;max-width:48ch}
+ .stp{grid-template-columns:repeat(4,1fr);gap:24px}.stp div{padding:18px 0 24px}
+ .fx{margin-top:84px;padding:34px 0 18px}
+ .pd{grid-template-columns:minmax(0,1.05fr) minmax(360px,.95fr);gap:64px;padding-top:20px;align-items:start}
+ .gal{position:sticky;top:92px;grid-template-columns:1fr 68px;gap:12px}.pm{aspect-ratio:1/1}.in{padding-top:14px}.in h1{font-size:42px}.pr{font-size:21px;margin:10px 0 16px}.in>p{font-size:14px;line-height:1.7;max-width:52ch}.add{height:52px;font-size:13px}
+ .su{margin-top:34px}
+ .bn{display:none}
+}
+@media(min-width:1100px){.g{gap:42px 24px}.hero{grid-template-columns:minmax(340px,.7fr) minmax(560px,1.3fr)}.hi{height:680px}.ht{padding-left:8vw}}
+
+
+/* NOVA header refinement */
+.hd{min-height:72px}
+.hleft,.hright{position:relative}
+.hright .ib{margin-left:2px}
+.hd:before{content:'CURATED CHOCOLATE · GIFTS · EVERYDAY FAVOURITES';position:absolute;left:0;right:0;top:-1px;text-align:center;font:500 7px/18px var(--sans);letter-spacing:.16em;color:var(--mut);pointer-events:none}
+@media(min-width:860px){
+  .hd{padding-top:26px!important;padding-bottom:13px!important}
+  .dn{gap:24px}
+  .dn button{font-size:11px;text-transform:uppercase;letter-spacing:.08em}
+  .logo{font-size:25px;letter-spacing:.34em}
+  .logo small{font-size:5.5px;letter-spacing:.31em;margin-top:5px}
+  .hd:before{top:2px;line-height:16px;font-size:7px}
+  .hd:after{bottom:-27px}
+}
+@media(max-width:859px){
+  .hd{min-height:62px;padding-top:18px}
+  .hd:before{display:none}
+  .logo{font-size:21px}
+}
+/* final visual pass: restrained editorial finish */
+body{background:
+  radial-gradient(circle at 8% 12%,rgba(255,255,255,.34),transparent 28%),
+  radial-gradient(circle at 92% 72%,rgba(124,91,58,.055),transparent 30%),
+  var(--bg)}
+.w{position:relative}
+.hd{backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px);background:rgba(244,238,227,.92)}
+.logo{letter-spacing:.28em}
+.dn button{position:relative;padding:5px 0}
+.dn button::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--ink);transform:scaleX(0);transform-origin:left;transition:transform .18s ease}
+.dn button:hover::after{transform:scaleX(1)}
+.hero{isolation:isolate}
+.hero::before{content:"";position:absolute;inset:10% 34% 4% -8%;background:rgba(255,255,255,.22);filter:blur(34px);z-index:-1;pointer-events:none}
+.ht small{display:inline-flex;align-items:center;gap:9px}
+.ht small::before{content:"";width:22px;height:1px;background:currentColor;opacity:.65}
+.btn{border-radius:3px;letter-spacing:.01em}
+.sc{border-radius:4px;box-shadow:0 16px 40px rgba(60,35,20,.08)}
+.ph,.pm{border-radius:4px;background:#d4c2a5}
+.ph::after,.pm::after,.si::after,.hi::after{opacity:.23}
+.ph::before,.pm::before{opacity:.8}
+.card .ph{transform:translateZ(0)}
+.card:hover .ph{transform:translateY(-3px)}
+.card:hover .cb h3{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+.tag{border-radius:2px;letter-spacing:.07em;text-transform:uppercase;padding:4px 7px}
+.fav{border-radius:2px;box-shadow:0 5px 16px rgba(42,26,19,.10)}
+.cb{padding-top:12px}
+.cb h3{letter-spacing:.005em}
+.srch{border-radius:3px;background:rgba(250,246,238,.78)}
+.c,.o,.sel{border-radius:3px}
+.add{border-radius:3px;letter-spacing:.01em}
+.th button{border-radius:3px}
+.tile .ph{border-radius:4px}
+.sr{transition:padding .16s ease}
+.sr:hover{padding-left:4px;padding-right:4px}
+.fx{border-top-color:rgba(229,218,200,.9)}
+@media(min-width:860px){
+  .hd{padding-top:17px;padding-bottom:13px}
+  .hero{padding-top:62px}
+  .ht h1{letter-spacing:-.018em}
+  .hi{border-radius:4px;box-shadow:0 24px 60px rgba(60,35,20,.15)}
+  .sc{border-radius:4px}
+  .sh{margin-top:72px}
+  .card .ph{aspect-ratio:1/.98}
+  .tile .ph{aspect-ratio:1/1}
+}
+@media(prefers-reduced-motion:reduce){.fd,.sb,.btn,.card .ph,.sr{animation:none;transition:none}}
+@media(prefers-reduced-motion:reduce){.fd,.sb{animation:none}}
+
+/* premium sheets: mobile menu + sort */
+.sb{--gold:#b09462}
+.sb.sx{border-radius:22px 22px 0 0;padding:0 22px calc(18px + env(safe-area-inset-bottom,0px));overscroll-behavior:contain}
+.sx-gp{display:flex;justify-content:center;padding:10px 0 6px;margin:0 -22px;touch-action:none;cursor:grab}
+.sx-gp::before{content:"";width:36px;height:4px;border-radius:2px;background:var(--tan)}
+.sx-hd{display:flex;align-items:center;justify-content:space-between;padding:8px 0 12px}
+.sx-eb{font:500 10px/1 var(--sans);letter-spacing:.28em;color:var(--mut);display:inline-flex;align-items:center;gap:10px}
+.sx-eb::before{content:"";width:18px;height:1px;background:var(--gold)}
+.sx .sx-hd h2{font:500 24px/1.1 var(--serif);margin:0;letter-spacing:.005em}
+.sx-x{background:none;border:1px solid var(--line);width:34px;height:34px;border-radius:50%;display:grid;place-items:center;color:var(--ink);cursor:pointer;transition:background .2s ease-out,border-color .2s ease-out}
+.sx-x svg{width:16px;height:16px}
+.sx-x:active{background:var(--card);border-color:var(--tan)}
+.sx-mn,.sx-ops{display:block}
+.sx-mi,.sx-op{display:flex;align-items:center;justify-content:space-between;gap:16px;width:100%;text-align:left;background:none;border:0;border-top:1px solid var(--line);color:var(--ink);cursor:pointer;-webkit-tap-highlight-color:transparent;transition:background .22s ease-out,padding .22s ease-out,color .22s ease-out}
+.sx-mi:last-child,.sx-op:last-child{border-bottom:1px solid var(--line)}
+.sx-mi{padding:19px 2px;font:400 27px/1.1 var(--serif);letter-spacing:.005em}
+.sx-mi svg{width:18px;height:18px;color:var(--gold);flex:none;transition:transform .25s cubic-bezier(.22,.8,.3,1)}
+.sx-mi:active{background:var(--card);padding-left:10px}
+.sx-mi:active svg{transform:translateX(4px)}
+.sx-op{padding:16px 2px;font:400 18px/1.25 var(--serif);color:#6b5a4e}
+.sx-op:active{background:var(--card);padding-left:8px}
+.sx-op[aria-checked="true"]{color:var(--ink)}
+.sx-ck{width:18px;height:18px;border-radius:50%;border:1px solid var(--tan);flex:none;display:grid;place-items:center;transition:border-color .22s ease-out}
+.sx-ck::after{content:"";width:8px;height:8px;border-radius:50%;background:var(--gold);transform:scale(0);opacity:0;transition:transform .25s cubic-bezier(.22,.8,.3,1),opacity .2s ease-out}
+.sx-op[aria-checked="true"] .sx-ck{border-color:var(--gold)}
+.sx-op[aria-checked="true"] .sx-ck::after{transform:scale(1);opacity:1}
+@media(hover:hover){.sx-mi:hover{background:var(--card);padding-left:10px}.sx-mi:hover svg{transform:translateX(4px)}.sx-op:hover{background:var(--card);padding-left:8px}.sx-x:hover{background:var(--card);border-color:var(--tan)}}
+.sx-mi:focus-visible,.sx-op:focus-visible,.sx-x:focus-visible{outline:2px solid var(--ink);outline-offset:-2px}
+button.sel{text-align:left;white-space:nowrap}
+@media(prefers-reduced-motion:reduce){#sheet,.sb,.sx-mi,.sx-op,.sx-x,.sx-mi svg,.sx-ck,.sx-ck::after{transition:none}}
+
+/* ordering flow */
+.pg{--gold:#b09462;position:fixed;inset:0;z-index:10;background:var(--bg);display:flex;flex-direction:column;padding-top:env(safe-area-inset-top,0px);visibility:hidden;opacity:0;transform:translateY(16px);transition:transform .32s cubic-bezier(.22,.8,.3,1),opacity .26s ease-out,visibility 0s linear .32s}
+.pg.open{visibility:visible;opacity:1;transform:none;transition:transform .32s cubic-bezier(.22,.8,.3,1),opacity .26s ease-out,visibility 0s}
+.pgt{flex:none;display:grid;grid-template-columns:44px 1fr 44px;align-items:center;padding:8px max(10px,calc((100% - 560px)/2));border-bottom:1px solid var(--line)}
+.pgt h1{font:500 19px var(--serif);text-align:center;letter-spacing:.02em;outline:0}
+.pgb{flex:1;overflow:auto;overscroll-behavior:contain}
+.o-pgw{max-width:560px;margin:0 auto;padding:8px 20px 36px}
+.pgf{flex:none;display:flex;align-items:center;gap:18px;border-top:1px solid var(--line);background:var(--bg);padding:12px max(18px,calc((100% - 560px)/2)) calc(12px + env(safe-area-inset-bottom,0px))}
+.pgf small{display:block;font:500 9.5px var(--sans);letter-spacing:.16em;color:var(--mut)}.pgf b{font:500 22px/1.1 var(--serif)}.pgf .o-b{flex:1;margin:0}
+.o-in{animation:oin .32s cubic-bezier(.22,.8,.3,1)}@keyframes oin{from{opacity:0;transform:translateY(10px)}}
+.pop{animation:opop .3s ease-out}@keyframes opop{from{opacity:.35;transform:translateY(3px)}}
+.bc.bump{animation:obump .3s ease-out}@keyframes obump{50%{transform:scale(1.3)}}
+.o-b{display:flex;align-items:center;justify-content:center;width:100%;min-height:50px;margin-top:10px;border:1px solid var(--dk);background:var(--dk);color:var(--bg);border-radius:3px;font:500 13px var(--sans);letter-spacing:.04em;cursor:pointer;transition:transform .18s ease-out,background .2s ease-out,opacity .2s;-webkit-tap-highlight-color:transparent}
+.o-b:active{transform:scale(.985)}.o-b.gh{background:none;color:var(--ink);border-color:var(--tan)}.o-b.gh:active{background:var(--card)}.o-b:disabled{opacity:.55;cursor:default}
+.o-ct{font:400 12px var(--sans);color:var(--mut);margin-left:10px}
+.o-ci{display:flex;justify-content:space-between;gap:14px;padding:16px 0;border-top:1px solid var(--line);max-height:200px;overflow:hidden;transition:max-height .28s ease-out,opacity .22s ease-out,padding .28s ease-out}
+.o-ci.go{max-height:0!important;opacity:0;padding-top:0;padding-bottom:0}
+.o-nm{font:500 17px/1.2 var(--serif)}.o-mt{font-size:11.5px;color:var(--mut);margin-top:3px}.o-lt{font:500 14px var(--sans)}
+.o-rw{display:flex;align-items:center;gap:16px;margin-top:10px}
+.o-qs{display:inline-flex;align-items:center;border:1px solid var(--line);border-radius:3px;background:var(--card)}
+.o-qs button{width:34px;height:34px;display:grid;place-items:center;background:none;border:0;cursor:pointer;color:var(--ink);transition:background .18s ease-out}.o-qs button:active{background:var(--line)}.o-qs button:disabled{color:var(--tan);cursor:default}.o-qs svg{width:14px;height:14px}
+.o-qs output{min-width:30px;text-align:center;font:500 13px var(--sans)}
+.o-rm{background:none;border:0;padding:6px 0;font-size:11px;color:var(--mut);text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.o-tt{display:flex;justify-content:space-between;align-items:baseline;padding:6px 0;font-size:13px}.o-tt b{font:500 15px var(--sans)}.o-tt.gr{border-top:1px solid var(--line);margin-top:8px;padding-top:14px}.o-tt.gr span{font:500 15px var(--sans)}.o-tt.gr b{font:500 22px var(--serif)}
+.o-hint,.o-mu{font-size:11.5px;color:var(--mut)}.o-hint{margin:2px 0 14px}
+.o-es{text-align:center;padding:26px 8px 8px}.o-es i{width:58px;height:58px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;margin:0 auto 16px;color:var(--mut)}.o-es svg{width:24px;height:24px}.o-es h3{font:500 22px var(--serif)}.o-es p{font-size:12.5px;color:var(--mut);margin:6px auto 4px;max-width:250px}
+.o-ac{display:flex;align-items:center;gap:14px;width:100%;text-align:left;background:none;border:0;border-top:1px solid var(--line);padding:16px 2px;cursor:pointer;transition:background .22s ease-out,padding .22s ease-out}.o-ac:last-of-type{border-bottom:1px solid var(--line)}.o-ac:active{background:var(--card);padding-left:8px}
+.o-ac>i svg{width:20px;height:20px;color:var(--gold)}.o-ac>span{flex:1}.o-ac b{display:block;font:400 19px var(--serif)}.o-ac small{color:var(--mut);font-size:11.5px}.o-ac>svg{width:17px;height:17px;color:var(--gold)}
+.o-sec{padding:22px 0 8px}.o-sec+.o-sec{border-top:1px solid var(--line)}
+.o-eh{font:500 10px/1 var(--sans);letter-spacing:.24em;color:var(--mut);margin:0 0 16px;display:flex;align-items:center;gap:10px}.o-eh::before{content:"";width:16px;height:1px;background:var(--gold)}
+.o-fl{margin-bottom:14px}.o-fl label{display:block;font:500 10px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--mut);margin-bottom:6px}.o-fl label span{text-transform:none;letter-spacing:0}
+.o-fl input,.o-fl textarea{width:100%;border:1px solid var(--line);border-radius:3px;background:rgba(250,246,238,.78);padding:0 13px;height:46px;font:400 16px var(--sans);color:var(--ink);transition:border-color .2s ease-out,background .2s}.o-fl textarea{height:auto;min-height:76px;padding:12px 13px;resize:none;line-height:1.5}
+.o-fl input:focus,.o-fl textarea:focus{outline:0;border-color:var(--ink);background:var(--card)}.o-fl.bad input{border-color:#a2442f}
+.o-er{display:none;font-size:11px;color:#a2442f;margin-top:5px}.bad .o-er{display:block}.o-fr{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.o-si{display:flex;justify-content:space-between;gap:14px;padding:11px 0;border-top:1px solid var(--line);font:400 15px var(--serif)}.o-si small{display:block;font:400 11.5px var(--sans);color:var(--mut)}.o-si b{font:500 14px var(--sans)}
+.o-pm{display:flex;align-items:center;justify-content:space-between;gap:14px;width:100%;text-align:left;background:rgba(250,246,238,.6);border:1px solid var(--line);border-radius:3px;padding:14px;margin-bottom:10px;cursor:pointer;transition:border-color .22s ease-out,background .22s ease-out}.o-pm b{display:block;font:500 13.5px var(--sans)}.o-pm small{color:var(--mut);font-size:11.5px}
+.o-pm[aria-checked="true"]{border-color:var(--ink);background:var(--card)}.o-pm[aria-checked="true"] .sx-ck{border-color:var(--gold)}.o-pm[aria-checked="true"] .sx-ck::after{transform:scale(1);opacity:1}
+.o-note{display:none;border:1px dashed var(--tan);border-radius:3px;padding:12px 14px;font-size:12px;line-height:1.5;color:#6b5a4e}.o-note.on{display:block;animation:oin .3s ease-out}
+.o-cf{text-align:center;padding-top:26px}.o-cf .o-eh{justify-content:center;margin-top:18px}.o-cf h2{font:500 28px/1.15 var(--serif);margin:0 0 8px}
+.o-ck2{width:72px;height:72px;margin:0 auto}.o-ck2 circle{stroke-dasharray:189;stroke-dashoffset:189;animation:odraw .6s ease-out .1s forwards}.o-ck2 path{stroke-dasharray:50;stroke-dashoffset:50;animation:odraw .4s ease-out .55s forwards}@keyframes odraw{to{stroke-dashoffset:0}}
+.o-card{border:1px solid var(--line);background:var(--card);border-radius:3px;padding:18px;margin:22px 0 14px;text-align:left}.o-card small{display:block;font:500 9.5px var(--sans);letter-spacing:.2em;color:var(--mut)}.o-card strong{display:block;font:500 26px var(--serif);letter-spacing:.06em;margin:4px 0 10px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.o-oc{display:block;width:100%;text-align:left;background:var(--card);border:1px solid var(--line);border-radius:3px;padding:16px;margin:14px 0 0;cursor:pointer;transition:transform .18s ease-out,border-color .2s}.o-oc:active{transform:scale(.99);border-color:var(--tan)}
+.o-oh{display:flex;justify-content:space-between;align-items:center;gap:10px}.o-oh b{font:500 14px var(--sans);letter-spacing:.04em}.o-oc small{display:block;color:var(--mut);font-size:11.5px;margin:2px 0 10px}
+.o-il{display:flex;justify-content:space-between;font:400 14px var(--serif);padding:3px 0}.o-il i{font:normal 12px var(--sans);color:var(--mut)}.o-of{border-top:1px solid var(--line);margin-top:10px;padding-top:10px;font-size:12px;color:var(--mut)}.o-of b{font:500 15px var(--sans);color:var(--ink)}
+.o-st{font:600 9.5px var(--sans);font-style:normal;letter-spacing:.12em;text-transform:uppercase;border:1px solid var(--gold);color:#7d6636;padding:4px 8px;border-radius:2px;white-space:nowrap}
+.o-stp{display:flex;list-style:none;padding:0;margin:20px 0 4px}.o-stp li{flex:1;text-align:center;position:relative;font-size:10px;line-height:1.3;color:var(--mut);padding:0 3px}.o-stp i{display:block;width:12px;height:12px;border-radius:50%;border:1px solid var(--tan);background:var(--bg);margin:0 auto 8px;position:relative;z-index:1}.o-stp li::before{content:"";position:absolute;top:6px;left:-50%;right:50%;height:1px;background:var(--tan)}.o-stp li:first-child::before{display:none}
+.o-stp li.d i{background:var(--ink);border-color:var(--ink)}.o-stp li.d::before,.o-stp li.c::before{background:var(--ink)}.o-stp li.c i{background:var(--gold);border-color:var(--gold)}.o-stp li.c{color:var(--ink);font-weight:600}
+@media(prefers-reduced-motion:reduce){.pg,.o-ci,.o-b,.o-in,.pop,.o-note,.bc.bump,.o-ck2 *{animation:none;transition:none}.o-ck2 *{stroke-dashoffset:0}}
+.o-demo{text-align:center;font:400 10.5px var(--sans);letter-spacing:.08em;color:var(--mut);margin:14px 0 0}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs id="defs"></defs></svg>
+<header class="hd" id="hd"></header>
+<main class="w" id="app"></main>
+<nav class="bn" aria-label="Main">
+<button data-go="home" id="n-home"></button><button data-go="shop" id="n-shop"></button><button data-go="story" id="n-story"></button><button data-act="acct" id="n-acct"></button>
+</nav>
+<div id="sheet" data-act="close"><div class="sb" id="sb"></div></div>
+<div class="pg" id="pg" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Order"><div class="pgt" id="pgt"></div><div class="pgb" id="pgb"></div><div class="pgf" id="pgf" style="display:none"></div></div>
+
+<script>
+/* icons */
+const IC={menu:'M4 8h16M4 16h16',bag:'M6 8h12l-1 12H7zM9 8V6.5a3 3 0 016 0V8',heart:'M12 20s-7-4.4-7-10a4 4 0 017-2.5A4 4 0 0119 10c0 5.6-7 10-7 10z',back:'M15 5l-7 7 7 7',home:'M4 11l8-7 8 7v9h-5v-6H9v6H4z',shop:'M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z',leaf:'M5 19c0-8 5-14 14-14 0 9-6 14-14 14zM5 19l7-7',arr:'M5 12h14M13 6l6 6-6 6',box:'M4 8l8-4 8 4v9l-8 4-8-4zM4 8l8 4 8-4M12 12v9',ok:'M12 21a9 9 0 100-18 9 9 0 000 18zM8 12l3 3 5-6',plus:'M12 5v14M5 12h14',min:'M5 12h14',search:'M11 4a7 7 0 100 14 7 7 0 000-14zM20 20l-4-4',user:'M12 12a4 4 0 100-8 4 4 0 000 8zM5 20c0-4 3-6 7-6s7 2 7 6'};
+const I=n=>`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="${IC[n]}"/></svg>`;
+
+/* products: a curated mix of bars, confections and giftable favourites */
+const PR=[
+{id:1,k:'dark',n:'72% Dark Cacao',d:'Rich · Bold · Smooth',c:'72%',cp:72,nt:'Roasted nut, dried fruit',tag:'Signature',pr:[14,22],sz:['70g','120g'],ds:'Our everyday dark bar. Roasted nut and dried fruit up front, with a clean, slow finish.',cat:['Dark'],ing:'Cacao beans, cane sugar, cocoa butter.',alg:'Made where milk and nuts are handled.',pair:'Black coffee, aged cheddar'},
+{id:2,k:'int',n:'85% Intense Dark',d:'Deep · Dry · Lingering',c:'85%',cp:85,nt:'Bitter cocoa, dark roast, earth',tag:'Intense',pr:[15,23],sz:['70g','120g'],ds:'Very little sugar, so the cacao carries everything. Dry, deep and long, for people who already like dark.',cat:['Dark'],ing:'Cacao beans, cocoa butter, cane sugar.',alg:'Made where milk and nuts are handled.',pair:'Red wine, black tea'},
+{id:3,k:'salt',n:'Sea Salt Dark',d:'Dark · Salty · Smooth',c:'68%',cp:68,nt:'Cocoa, salt, caramelised sugar',pr:[14,22],sz:['70g','120g'],ds:'Dark chocolate with a light scatter of sea salt flakes. Savoury edge, smooth melt.',cat:['Dark','Flavoured'],ing:'Cacao beans, cane sugar, cocoa butter, sea salt flakes.',alg:'Made where milk and nuts are handled.',pair:'Ripe pear, sparkling water'},
+{id:4,k:'hazel',n:'Hazelnut Crunch',d:'Crunchy · Nutty · Milky',c:'55%',cp:55,nt:'Toasted hazelnut, cream, biscuit',tag:'Contains nuts',pr:[16,24],sz:['90g','150g'],ds:'Milk chocolate packed with roasted hazelnut pieces. A crisp first bite, then a soft melt.',cat:['Milk','Nuts'],ing:'Cane sugar, roasted hazelnuts, cocoa butter, cacao beans, whole milk powder, sunflower lecithin, vanilla.',alg:'Milk and hazelnuts. May contain other nuts.',pair:'Cappuccino, crisp apple'},
+{id:5,k:'alm',n:'Almond Praline',d:'Sweet · Toasted · Creamy',c:'52%',cp:52,nt:'Caramelised almond, toasted sugar, vanilla',tag:'Contains nuts',pr:[17,26],sz:['90g','150g'],ds:'Milk chocolate with almond praline folded through. Toasted sugar, a little crunch and a round finish.',cat:['Milk','Nuts'],ing:'Cane sugar, cocoa butter, almonds, cacao beans, whole milk powder, caramelised sugar, sunflower lecithin.',alg:'Milk and almonds. May contain other nuts.',pair:'Flat white, fresh figs'},
+{id:6,k:'milk',n:'Milk Chocolate',d:'Creamy · Caramel · Soft',c:'45%',cp:45,nt:'Caramel, malt, vanilla',pr:[13,20],sz:['70g','120g'],ds:'A creamy milk bar with caramel notes and a short, sweet finish.',cat:['Milk'],ing:'Cacao beans, whole milk powder, cane sugar, cocoa butter, vanilla.',alg:'Milk. May contain nuts.',pair:'Tea with milk, sliced banana'},
+{id:7,k:'esp',n:'Espresso Dark',d:'Bright · Bitter · Warm',c:'70%',cp:70,nt:'Roasted coffee, dark cocoa',pr:[15,23],sz:['70g','120g'],ds:'Dark chocolate with finely ground roasted coffee. Bright, bitter and warm.',cat:['Dark','Flavoured'],ing:'Cacao beans, cane sugar, cocoa butter, ground roasted coffee.',alg:'Made where milk and nuts are handled.',pair:'Cold milk, orange peel'},
+{id:8,k:'nib',n:'Cacao Nib Crunch',d:'Crisp · Earthy · Dark',c:'74%',cp:74,nt:'Roasted nib, dark cocoa, toasted grain',pr:[15,42],sz:['70g','3 x 70g'],ds:'Dark chocolate with roasted cacao nibs through it. A crisp, bitter crunch inside a smooth bar.',cat:['Dark','Flavoured'],ing:'Cacao beans, cane sugar, cocoa butter, roasted cacao nibs.',alg:'Made where milk and nuts are handled.',pair:'Plain yoghurt, green tea'},
+{id:9,k:'rocher',n:'Ferrero Rocher',d:'Hazelnut · Crisp · Creamy',c:'MILK',cp:0,nt:'Hazelnut, wafer, milk chocolate',tag:'Giftable',pr:[9,17],sz:['3 pc','8 pc','16 pc'],ds:'Golden hazelnut confections layered with crisp wafer, creamy filling and a milk chocolate coating.',cat:['Nuts','Confections','Gifts'],ing:'Hazelnuts, sugar, cocoa, milk ingredients, wheat wafer.',alg:'Contains milk, hazelnuts and wheat.',pair:'Espresso, black tea'},
+{id:10,k:'silk',n:'Cadbury Dairy Milk Silk',d:'Smooth · Creamy · Classic',c:'MILK',cp:0,nt:'Milk chocolate, vanilla, caramel',tag:'Classic',pr:[6,11],sz:['60g','110g','160g'],ds:'A smooth milk chocolate bar with a soft, creamy melt and a familiar sweet finish.',cat:['Milk','Bars'],ing:'Milk ingredients, cocoa solids, sugar, cocoa butter.',alg:'Contains milk. May contain nuts.',pair:'Cold coffee, strawberries'},
+{id:11,k:'bournville',n:'Bournville Rich Cocoa',d:'Dark · Cocoa-rich · Clean',c:'DARK',cp:0,nt:'Dark cocoa, roasted notes',pr:[5,9],sz:['45g','80g','150g'],ds:'A straightforward dark bar built around a deeper cocoa profile and a clean finish.',cat:['Dark','Bars'],ing:'Cocoa solids, sugar, cocoa butter.',alg:'May contain milk and nuts.',pair:'Black coffee, orange peel'},
+{id:12,k:'lindt',n:'Lindt Excellence 70%',d:'Silky · Dark · Refined',c:'70%',cp:70,nt:'Roasted cocoa, vanilla, dried fruit',pr:[8,14],sz:['50g','100g'],ds:'A fine dark bar with a smooth texture, roasted cocoa notes and a balanced finish.',cat:['Dark','Bars'],ing:'Cocoa mass, sugar, cocoa butter, vanilla.',alg:'May contain milk, soy and nuts.',pair:'Red berries, espresso'},
+{id:13,k:'toblerone',n:'Toblerone Milk Almond Nougat',d:'Honey · Almond · Nougat',c:'MILK',cp:0,nt:'Honey, almond, nougat, milk chocolate',tag:'Shareable',pr:[7,13],sz:['50g','100g','200g'],ds:'Milk chocolate with honey-almond nougat for a softer, textured bite.',cat:['Milk','Nuts','Confections','Gifts'],ing:'Milk chocolate, sugar, honey, almonds, egg white.',alg:'Contains milk, almonds and egg.',pair:'Tea, roasted almonds'},
+{id:14,k:'bueno',n:'Kinder Bueno',d:'Wafer · Hazelnut · Light',c:'MILK',cp:0,nt:'Hazelnut cream, wafer, milk chocolate',tag:'Crunchy',pr:[5,10],sz:['2 bars','4 bars'],ds:'Crisp wafer filled with hazelnut cream and finished with a light milk chocolate coating.',cat:['Milk','Nuts','Confections'],ing:'Wheat wafer, hazelnuts, milk ingredients, cocoa.',alg:'Contains milk, hazelnuts and wheat.',pair:'Iced coffee, banana'},
+{id:15,k:'raffaello',n:'Raffaello',d:'Coconut · Almond · Crisp',c:'MILK',cp:0,nt:'Coconut, almond, vanilla cream',tag:'Giftable',pr:[8,15],sz:['3 pc','8 pc','15 pc'],ds:'Crisp coconut-covered confections with a whole almond at the centre and a soft cream filling.',cat:['Nuts','Confections','Gifts'],ing:'Coconut, almonds, sugar, milk ingredients, wheat wafer.',alg:'Contains milk, almonds and wheat.',pair:'Earl grey, iced coffee'},
+{id:16,k:'galaxy',n:'Galaxy Smooth Milk',d:'Smooth · Creamy · Soft',c:'MILK',cp:0,nt:'Cream, caramel, cocoa',tag:'Classic',pr:[6,11],sz:['60g','110g','135g'],ds:'A smooth milk chocolate bar with a creamy melt and a gentle cocoa finish.',cat:['Milk','Bars'],ing:'Milk ingredients, sugar, cocoa solids, cocoa butter.',alg:'Contains milk. May contain nuts.',pair:'Cold brew, raspberries'},
+{id:17,k:'kisses',n:'Hershey’s Kisses',d:'Milk · Classic · Bite-size',c:'MILK',cp:0,nt:'Milk chocolate, vanilla, cocoa',tag:'Shareable',pr:[7,13],sz:['45g','100g','200g'],ds:'Bite-size milk chocolate pieces made for sharing, gifting or keeping close to the coffee cup.',cat:['Milk','Confections','Gifts'],ing:'Milk chocolate, sugar, cocoa solids, cocoa butter.',alg:'Contains milk. May contain nuts.',pair:'Coffee, pretzels'}];
+
+/* Display prices in INR for the India-focused demo storefront. */
+PR.forEach(p=>{p.pr=p.pr.map(v=>v*10)});
+
+/* PHOTOS: drop real photographs in here and they replace the built-in scenes automatically.
+   Keys are the product key plus a view. Product keys: dark, int, salt, hazel, alm, milk, esp, nib, rocher, silk, bournville, lindt, toblerone, bueno, raffaello, galaxy, kisses.
+   Views: card (shop card), flat (main product image), pieces, detail.
+   Also: hero, story.
+   Example: PHOTOS['dark:card']='images/dark-bar.jpg'  (URLs or data URIs both work) */
+const PHOTOS={};
+
+/* ---------- scene rendering ---------- */
+/* a: pack colour top, b: pack colour bottom, bg: backdrop, ac: print colour, m: chocolate tone, st: stone tint,
+   bn: pack detail, ic: pack icon, cb: shows a bowl on the shop card */
+const P={
+dark:{a:'#4a2c1f',b:'#1c100a',t:'72%',s:'DARK CACAO',bg:['#e6dccb','#c4b399'],ac:'#d9c4a4',m:0,st:'#b08e62',rot:15,lf:1,alt:'Dark cacao chocolate bar with pieces and cacao beans'},
+int:{a:'#2b1a15',b:'#0c0605',t:'85%',s:'INTENSE DARK',bg:['#ddd2c2','#a89782'],ac:'#cf9f6b',m:2,st:'#8c7355',rot:-11,lf:0,bn:{t:'lines',c:'#cf9f6b'},alt:'Intense dark chocolate bar with pieces and dark cacao beans'},
+salt:{a:'#58534d',b:'#2b2825',t:'68%',s:'SEA SALT',bg:['#e9e5dc','#c3bdb0'],ac:'#f1e8d6',m:0,st:'#9f9a8c',rot:9,lf:1,bn:{t:'panel',c:'#ebe1cd',tx:'#2a1a13'},ic:'salt',cb:1,alt:'Sea salt dark chocolate bar with a bowl of sea salt flakes'},
+hazel:{a:'#7b4b2b',b:'#3b2113',t:'55%',s:'HAZELNUT CRUNCH',bg:['#e6d8c0','#c6ac86'],ac:'#f3e0bc',m:1,st:'#b8935f',rot:-16,lf:1,bn:{t:'panel',c:'#cfa96f',tx:'#2f1a0f'},ic:'nut',cb:1,alt:'Hazelnut crunch milk chocolate bar with a bowl of roasted hazelnuts'},
+alm:{a:'#b5855a',b:'#734b2b',t:'52%',s:'ALMOND PRALINE',bg:['#efe0ca','#d3b890'],ac:'#fdf3e0',m:1,st:'#c4a47a',rot:12,lf:0,bn:{t:'side',c:'#fdf3e0'},ic:'alm',cb:1,alt:'Almond praline milk chocolate bar with a bowl of almonds'},
+milk:{a:'#a5734c',b:'#603c26',t:'45%',s:'MILK',bg:['#f0e6d3','#d9c7a8'],ac:'#f8ead2',m:1,st:'#cdb083',rot:-7,lf:1,bn:{t:'lines',c:'#f8ead2'},alt:'Milk chocolate bar with pieces and cacao beans'},
+esp:{a:'#35271f',b:'#130b08',t:'70%',s:'ESPRESSO',bg:['#e0d6c8','#b5a58f'],ac:'#dcc39e',m:0,st:'#9a7f62',rot:18,lf:0,bn:{t:'band',c:'#7a4a2c'},ic:'bean',cb:1,alt:'Espresso dark chocolate bar with a bowl of coffee beans'},
+nib:{a:'#cbae80',b:'#a08258',t:'74%',s:'CACAO NIB',bg:['#e1dbc6','#b9ae8d'],ac:'#2b1a13',sh:'#fff',m:0,st:'#a69b72',rot:-9,lf:1,bn:{t:'frame'},ic:'nib',cb:1,alt:'Cacao nib dark chocolate bar in a paper wrapper with a bowl of cacao nibs'},
+rocher:{a:'#c9a35a',b:'#76501e',t:'',s:'HAZELNUT ROCHER',bg:['#eee1c8','#c7a66c'],ac:'#f8ead0',m:1,st:'#a9844c',rot:-10,lf:1,bn:{t:'frame',c:'#f4dfae'},ic:'nut',cb:1,alt:'Hazelnut chocolate confection with wafer and golden wrapper'},
+silk:{a:'#a66b46',b:'#603622',t:'',s:'SILK MILK',bg:['#ead9c7','#c7ab92'],ac:'#f8e8d7',m:1,st:'#b89072',rot:7,lf:0,bn:{t:'band',c:'#e7cdb5'},alt:'Smooth milk chocolate bar with a soft cream-toned wrapper'},
+bournville:{a:'#3c251d',b:'#160b08',t:'',s:'RICH COCOA',bg:['#ded2c2','#a28f7b'],ac:'#d5b58d',m:0,st:'#7d6651',rot:-14,lf:1,bn:{t:'lines',c:'#d5b58d'},alt:'Dark cocoa chocolate bar with deep brown packaging'},
+lindt:{a:'#4b342a',b:'#1a0d08',t:'70%',s:'EXCELLENCE',bg:['#e7ddd0','#b8a99a'],ac:'#d8c09f',m:0,st:'#8e7863',rot:11,lf:0,bn:{t:'panel',c:'#efe2ca',tx:'#2a1a13'},alt:'Dark chocolate bar with refined brown packaging'},
+toblerone:{a:'#d0a74d',b:'#8b6326',t:'',s:'ALMOND NOUGAT',bg:['#efe2c8','#c9ad7a'],ac:'#fff2d3',m:1,st:'#ae8b50',rot:-7,lf:1,bn:{t:'side',c:'#f5e7c5'},ic:'alm',cb:1,alt:'Milk chocolate with almond nougat and honey notes'},
+bueno:{a:'#b98a54',b:'#76502c',t:'',s:'HAZELNUT WAFER',bg:['#eee3d2','#c8b397'],ac:'#fff0d4',m:1,st:'#9d7a50',rot:13,lf:1,bn:{t:'band',c:'#ead4ae'},ic:'nut',cb:1,alt:'Hazelnut wafer chocolate bar with light milk chocolate packaging'},
+raffaello:{a:'#efe8dc',b:'#c8b7a0',t:'',s:'COCONUT ALMOND',bg:['#f0e8dc','#d1c0aa'],ac:'#8f6f4d',m:1,st:'#b79b79',rot:-8,lf:1,bn:{t:'frame',c:'#9b7a55'},ic:'alm',cb:1,alt:'Coconut almond confection in an ivory gift-style wrapper'},
+galaxy:{a:'#8a4f52',b:'#4d2528',t:'',s:'SMOOTH MILK',bg:['#ead9d1','#c5aaa0'],ac:'#f5e4d7',m:1,st:'#a77c71',rot:9,lf:0,bn:{t:'band',c:'#e8cfc0'},alt:'Smooth milk chocolate bar in a warm rose-brown wrapper'},
+kisses:{a:'#6c4b3a',b:'#342018',t:'',s:'MILK BITES',bg:['#e8ded2','#c5b3a3'],ac:'#f4e7d8',m:1,st:'#96745e',rot:-12,lf:1,bn:{t:'panel',c:'#ead8c4',tx:'#2a1a13'},alt:'Bite-size milk chocolate pieces in a warm cocoa wrapper'}};
+Object.keys(P).forEach(k=>P[k].k=k);
+
+document.getElementById('defs').innerHTML=
+`<filter id="bl" x="-30%" y="-100%" width="160%" height="300%"><feGaussianBlur stdDeviation="7"/></filter>
+<filter id="bs" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2.5"/></filter>
+<filter id="b3" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="2.6"/></filter>
+<filter id="b10" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="9"/></filter>
+<filter id="gr" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 .16 0 0 0 0 .1 0 0 0 0 .07 1 0 0 0 -.38"/></filter>
+<filter id="stone" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".03 .045" numOctaves="5" seed="11" result="n"/><feDiffuseLighting in="n" surfaceScale="4.2" diffuseConstant="1.15" lighting-color="#f3e7d2" result="l"><feDistantLight azimuth="225" elevation="48"/></feDiffuseLighting><feComposite in="l" in2="SourceGraphic" operator="in"/></filter>
+<linearGradient id="cf" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5e3a2b"/><stop offset="1" stop-color="#2a160f"/></linearGradient>
+<linearGradient id="ct" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#6f4733"/><stop offset="1" stop-color="#8a5c44"/></linearGradient>
+<linearGradient id="cs" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2a170f"/><stop offset="1" stop-color="#150a05"/></linearGradient>
+<linearGradient id="mf" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9a6743"/><stop offset="1" stop-color="#5a3622"/></linearGradient>
+<linearGradient id="mt" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#a8754f"/><stop offset="1" stop-color="#c08d64"/></linearGradient>
+<linearGradient id="ms" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5a3622"/><stop offset="1" stop-color="#3b2214"/></linearGradient>
+<linearGradient id="xf" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3b241a"/><stop offset="1" stop-color="#100804"/></linearGradient>
+<linearGradient id="xt" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#4f3426"/><stop offset="1" stop-color="#6a4836"/></linearGradient>
+<linearGradient id="xs" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#150b06"/><stop offset="1" stop-color="#090403"/></linearGradient>
+<radialGradient id="bean" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#85563a"/><stop offset="1" stop-color="#2b170d"/></radialGradient>
+<radialGradient id="cbean" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#5b4033"/><stop offset="1" stop-color="#150b07"/></radialGradient>
+<radialGradient id="nut" cx=".35" cy=".3" r=".8"><stop offset="0" stop-color="#e2b676"/><stop offset="1" stop-color="#8a5a2a"/></radialGradient>
+<linearGradient id="alg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#d2a46c"/><stop offset="1" stop-color="#8a5a2e"/></linearGradient>
+<linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#858150"/><stop offset="1" stop-color="#4a4a2a"/></linearGradient>
+<linearGradient id="pod" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c98a45"/><stop offset=".55" stop-color="#8d4f22"/><stop offset="1" stop-color="#4f2711"/></linearGradient>
+<linearGradient id="wood" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#a27c58"/><stop offset="1" stop-color="#56392a"/></linearGradient>
+<linearGradient id="cer" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f1e8d8"/><stop offset="1" stop-color="#c9bba0"/></linearGradient>
+<linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3ebdc"/><stop offset=".5" stop-color="#dccdb3"/><stop offset="1" stop-color="#c3ae8c"/></linearGradient>
+<radialGradient id="fall" cx=".32" cy=".25" r=".95"><stop offset="0" stop-color="#2a160b" stop-opacity="0"/><stop offset="1" stop-color="#2a160b" stop-opacity=".42"/></radialGradient>
+<radialGradient id="vig" cx=".5" cy=".42" r=".8"><stop offset=".6" stop-color="#2a160b" stop-opacity="0"/><stop offset="1" stop-color="#2a160b" stop-opacity=".22"/></radialGradient>`+
+Object.keys(P).map(k=>`<linearGradient id="pk-${k}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${P[k].a}"/><stop offset="1" stop-color="${P[k].b}"/></linearGradient><radialGradient id="bg-${k}" cx=".35" cy=".3" r=".95"><stop offset="0" stop-color="${P[k].bg[0]}"/><stop offset="1" stop-color="${P[k].bg[1]}"/></radialGradient>`).join('');
+
+const SERIF='Playfair Display, Georgia, serif',SANS='Inter, Arial, sans-serif';
+const rnd=n=>{const x=Math.sin(n*127.1+311.7)*43758.5453;return x-Math.floor(x)};
+const open=(vb,label,par)=>`<svg viewBox="${vb}" preserveAspectRatio="${par||'xMidYMid slice'}" role="img" aria-label="${label}">`;
+const finish=(w,h,x=0,y=0)=>`<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="url(#vig)"/><rect x="${x}" y="${y}" width="${w}" height="${h}" fill="#000" filter="url(#gr)" opacity=".3"/></svg>`;
+const stone=(d,tint,op=.5)=>`<path d="${d}" fill="#cdbb9c" filter="url(#stone)"/><path d="${d}" fill="${tint}" opacity="${op}" style="mix-blend-mode:multiply"/>`;
+
+/* inclusion flecks inside the chocolate, so each bar breaks differently */
+const SP={salt:['#fbf7ee',.7,1.3,1],hazel:['#dcb67c',2.4,3.6,1.6],alm:['#ecd6ab',2.8,3.8,2.2],esp:['#7a5638',.6,1.2,1],nib:['#b98a5e',.8,1.9,1]};
+const speck=(x,y,w,h,k)=>{const q=SP[k];if(!q)return '';const n=Math.round(w*h/(q[3]>1.5?60:20));return Array.from({length:n},(_,i)=>{const rx=q[1]+rnd(i+x)*(q[2]-q[1]),ry=rx/q[3];return `<ellipse cx="${(x+3+rnd(i*2+y)*(w-6)).toFixed(1)}" cy="${(y+3+rnd(i*5+x+1)*(h-6)).toFixed(1)}" rx="${rx.toFixed(1)}" ry="${ry.toFixed(1)}" fill="${q[0]}" opacity=".82" transform="rotate(${(rnd(i+7)*180).toFixed(0)} ${(x+w/2).toFixed(0)} ${(y+h/2).toFixed(0)})"/>`}).join('')};
+
+/* chocolate block, lit from upper left. m: 0 dark, 1 milk, 2 very dark */
+const PAL=[['cf','ct','cs'],['mf','mt','ms'],['xf','xt','xs']];
+function blk(x,y,w,h,d,c,r,m,k){const dx=d*.9,dy=d*.5,[F,T,S]=PAL[m||0];let s=`<g transform="rotate(${r||0} ${x+w/2} ${y+h})">`;
+s+=`<ellipse cx="${x+w/2+dx}" cy="${y+h+2}" rx="${w*.66}" ry="${Math.max(4,d*.38)}" fill="#1d0f08" opacity=".42" filter="url(#bs)"/>`;
+s+=`<polygon points="${x+w},${y} ${x+w+dx},${y-dy} ${x+w+dx},${y+h-dy} ${x+w},${y+h}" fill="url(#${S})"/>`;
+s+=`<polygon points="${x},${y} ${x+dx},${y-dy} ${x+w+dx},${y-dy} ${x+w},${y}" fill="url(#${T})"/>`;
+s+=`<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="url(#${F})"/>`+speck(x,y,w,h,k);
+for(let i=1;i<c[0];i++){const X=x+i*w/c[0];s+=`<line x1="${X}" y1="${y}" x2="${X}" y2="${y+h}" stroke="#120804" stroke-opacity=".75" stroke-width="1.1"/><line x1="${X+1.1}" y1="${y}" x2="${X+1.1}" y2="${y+h}" stroke="#fff" stroke-opacity=".07"/>`}
+for(let j=1;j<c[1];j++){const Y=y+j*h/c[1];s+=`<line x1="${x}" y1="${Y}" x2="${x+w}" y2="${Y}" stroke="#120804" stroke-opacity=".75" stroke-width="1.1"/><line x1="${x}" y1="${Y+1.1}" x2="${x+w}" y2="${Y+1.1}" stroke="#fff" stroke-opacity=".07"/>`}
+return s+`<line x1="${x}" y1="${y+.4}" x2="${x+w}" y2="${y+.4}" stroke="#fff" stroke-opacity=".22" stroke-width=".9"/></g>`}
+
+const bean=(x,y,r,s=1,g='bean')=>`<g transform="translate(${x} ${y}) rotate(${r}) scale(${s})"><ellipse cx="2" cy="7" rx="15" ry="6" fill="#1d0f08" opacity=".45" filter="url(#bs)"/><ellipse rx="15" ry="9.5" fill="url(#${g})"/><path d="M-13 .5Q0 -3.5 13 .5" stroke="#170a05" stroke-width="1.3" fill="none"/><path d="M-12 3.5Q0 8 12 3.5" stroke="#000" stroke-opacity=".16" fill="none"/><ellipse cx="-4" cy="-4.5" rx="6" ry="1.8" fill="#fff" opacity=".17"/></g>`;
+const nut=(x,y,s=1)=>`<g transform="translate(${x} ${y}) scale(${s})"><ellipse cx="2" cy="9" rx="11" ry="4" fill="#1d0f08" opacity=".4" filter="url(#bs)"/><circle r="12" fill="url(#nut)"/><ellipse cx="-4" cy="-5" rx="4" ry="2.2" fill="#fff" opacity=".28"/><path d="M9 2q3 1 2 5" stroke="#6b4420" stroke-width="1" fill="none"/></g>`;
+const alm=(x,y,r,s=1)=>`<g transform="translate(${x} ${y}) rotate(${r}) scale(${s})"><ellipse cx="2" cy="7" rx="13" ry="4" fill="#1d0f08" opacity=".38" filter="url(#bs)"/><path d="M-13 -2C-12 -9 6 -11 15 0C6 10 -12 9 -13 2Z" fill="url(#alg)"/><path d="M-11 0Q1 -3 13 0" stroke="#7a4f27" stroke-opacity=".55" fill="none"/><ellipse cx="-3" cy="-4" rx="6" ry="1.6" fill="#fff" opacity=".25"/></g>`;
+const nibs=(n,x0,y0,x1,y1,sd,sc=1)=>Array.from({length:n},(_,i)=>{const x=x0+rnd(i+sd)*(x1-x0),y=y0+rnd(i*3+sd+9)*(y1-y0),a=rnd(i+sd+5)*180,w=(2+rnd(i+sd+2)*3)*sc;return `<g transform="translate(${x.toFixed(1)} ${y.toFixed(1)}) rotate(${a.toFixed(0)})"><ellipse cx="1" cy="2" rx="${w.toFixed(1)}" ry="${(w*.5).toFixed(1)}" fill="#1d0f08" opacity=".35"/><polygon points="${-w},0 ${-w*.3},${-w*.8} ${w},${-w*.3} ${w*.7},${w*.6} ${-w*.4},${w*.7}" fill="#5a3a28"/><polygon points="${-w},0 ${-w*.3},${-w*.8} ${w*.2},${-w*.2}" fill="#8f6548" opacity=".85"/></g>`}).join('');
+const crumbs=(n,x0,y0,x1,y1,sd)=>Array.from({length:n},(_,i)=>`<circle cx="${(x0+rnd(i+sd)*(x1-x0)).toFixed(1)}" cy="${(y0+rnd(i*3+sd+9)*(y1-y0)).toFixed(1)}" r="${(.5+rnd(i+sd+4)*1.3).toFixed(1)}" fill="#2a160c" opacity="${(.35+rnd(i+sd+2)*.4).toFixed(2)}"/>`).join('');
+const flakes=(n,x0,y0,x1,y1,sd)=>Array.from({length:n},(_,i)=>{const x=(x0+rnd(i+sd)*(x1-x0)).toFixed(1),y=(y0+rnd(i*3+sd+9)*(y1-y0)).toFixed(1);return `<path d="M${x} ${y}l3.4-1.6 1.8 2.6-3 2.4z" fill="#fbf7ee" opacity=".92"/>`}).join('');
+const leafD='M0 0C22 -26 78 -36 118 -14C86 16 30 22 0 0Z';
+const leaf=(x,y,r,s,f)=>`<g transform="translate(${x} ${y}) rotate(${r}) scale(${s})" ${f?`filter="url(#${f})"`:''}><path d="${leafD}" fill="url(#leaf)"/><path d="M2 0Q60 -12 116 -14" stroke="#c9c58f" stroke-opacity=".5" stroke-width="1.2" fill="none"/></g>`;
+const bowl=(x,y,rw,g,rim,fill,inner)=>`<ellipse cx="${x+5}" cy="${y+rw*.38}" rx="${rw*1.08}" ry="${rw*.3}" fill="#1d0f08" opacity=".38" filter="url(#bs)"/><path d="M${x-rw} ${y-4}Q${x-rw} ${y+rw*.66} ${x} ${y+rw*.66}Q${x+rw} ${y+rw*.66} ${x+rw} ${y-4}Z" fill="url(#${g})"/><ellipse cx="${x}" cy="${y-4}" rx="${rw}" ry="${rw*.3}" fill="${rim}"/><ellipse cx="${x}" cy="${y-5}" rx="${rw-3.5}" ry="${rw*.25}" fill="${fill}"/>${inner}`;
+
+/* what sits in each bowl: beans, nuts, almonds, nibs, salt */
+function heap(k,x,y,rw){const sc=rw/68,px=i=>x-rw*.55+rnd(i+3)*rw*1.1,py=i=>y-9+rnd(i+9)*8;
+if(k=='hazel')return Array.from({length:7},(_,i)=>nut(px(i),py(i),sc)).join('');
+if(k=='alm')return Array.from({length:7},(_,i)=>alm(px(i),py(i),rnd(i)*160-80,sc*1.3)).join('');
+if(k=='nib')return nibs(30,x-rw*.6,y-12,x+rw*.6,y-3,3,sc*1.8);
+if(k=='salt')return flakes(18,x-rw*.6,y-12,x+rw*.6,y-3,3);
+const g=(k=='int'||k=='esp')?'cbean':'bean';
+return Array.from({length:7},(_,i)=>bean(px(i),py(i),rnd(i+5)*180,sc,g)).join('')}
+const BS={salt:['cer','#e6dcc8','#f8f4ea'],alm:['cer','#e6dcc8','#cdbd9f'],nib:['cer','#e6dcc8','#cdbd9f']};
+const bowlK=(k,x,y,rw)=>{const b=BS[k]||['wood','#6b4a33','#2b170d'];return bowl(x,y,rw,b[0],b[1],b[2],heap(k,x,y,rw))};
+
+/* pack: every bar has its own colour, print and detail */
+function icon(p,cx,cy){const c=p.ac;switch(p.ic){
+case 'salt':return `<polygon points="${cx},${cy-6} ${cx+5},${cy} ${cx},${cy+6} ${cx-5},${cy}" fill="none" stroke="${c}" stroke-width="1" opacity=".85"/>`;
+case 'nut':return `<circle cx="${cx}" cy="${cy}" r="5" fill="none" stroke="${c}" stroke-width="1" opacity=".85"/><path d="M${cx-2} ${cy-6}l2-3 2 3" stroke="${c}" fill="none" opacity=".85"/>`;
+case 'alm':return `<path d="M${cx-8} ${cy-1}C${cx-6} ${cy-7} ${cx+3} ${cy-8} ${cx+9} ${cy}C${cx+3} ${cy+7} ${cx-6} ${cy+6} ${cx-8} ${cy+1}Z" fill="none" stroke="${c}" stroke-width="1" opacity=".85"/>`;
+case 'bean':return `<ellipse cx="${cx}" cy="${cy}" rx="8" ry="5" fill="none" stroke="${c}" stroke-width="1" opacity=".85"/><path d="M${cx-7} ${cy}Q${cx} ${cy-2.5} ${cx+7} ${cy}" stroke="${c}" fill="none" opacity=".85"/>`;
+case 'nib':return `<circle cx="${cx-6}" cy="${cy+2}" r="1.8" fill="${c}"/><circle cx="${cx}" cy="${cy-2}" r="2.2" fill="${c}"/><circle cx="${cx+6}" cy="${cy+2}" r="1.6" fill="${c}"/>`;
+default:return ''}}
+function pack(p,x,y,w,h){const B=p.bn||{},side=B.t=='side'?16:0,cx=x+(w-side)/2,sd=7,ac=p.ac,
+t=(yy,z,l,txt,f,o=1,c=ac)=>`<text x="${cx}" y="${yy}" text-anchor="middle" font-family="${f}" font-size="${z}" letter-spacing="${l}" fill="${c}" opacity="${o}">${txt}</text>`;
+let s=`<polygon points="${x},${y} ${x+sd},${y-5} ${x+w+sd},${y-5} ${x+w},${y}" fill="#fff" opacity=".16"/><polygon points="${x+w},${y} ${x+w+sd},${y-5} ${x+w+sd},${y+h-5} ${x+w},${y+h}" fill="#000" opacity=".5"/><rect x="${x}" y="${y}" width="${w}" height="${h}" fill="url(#pk-${p.k})"/><rect x="${x}" y="${y}" width="5" height="${h}" fill="#fff" opacity=".09"/><rect x="${x}" y="${y}" width="${w}" height="${h*.35}" fill="#fff" opacity=".035"/>`;
+if(B.t=='panel')s+=`<rect x="${x}" y="${y+h*.74}" width="${w}" height="${h*.26}" fill="${B.c}"/>`;
+if(B.t=='band')s+=`<rect x="${x}" y="${y+h*.5+8}" width="${w}" height="17" fill="${B.c}"/>`;
+if(B.t=='side')s+=`<rect x="${x+w-16}" y="${y}" width="16" height="${h}" fill="${B.c}"/>`;
+if(B.t=='frame')s+=`<rect x="${x+7}" y="${y+7}" width="${w-14}" height="${h-14}" fill="none" stroke="${ac}" stroke-opacity=".55" stroke-width="1"/>`;
+if(B.t=='lines')s+=`<rect x="${x+14}" y="${y+h-36}" width="${w-28}" height="1" fill="${B.c}" opacity=".7"/><rect x="${x+14}" y="${y+h-32}" width="${w-28}" height="1" fill="${B.c}" opacity=".7"/>`;
+const ls=p.s.length>11?1.5:2.6,sh=p.sh||'#000';
+s+=t(y+h*.14,15,5,'NOVA',SERIF,.95)+`<line x1="${cx-18}" x2="${cx+18}" y1="${y+h*.2}" y2="${y+h*.2}" stroke="${ac}" stroke-width=".6" opacity=".55"/>`+icon(p,cx,y+h*.3);
+s+=`<text x="${cx+.7}" y="${y+h*.5+.9}" text-anchor="middle" font-family="${SERIF}" font-size="36" fill="${sh}" opacity="${p.sh?.45:.4}">${p.t}</text>`+t(y+h*.5,36,0,p.t,SERIF,.95);
+if(B.t=='panel')s+=t(y+h*.865,6.4,ls,p.s,SANS,.9,B.tx)+t(y+h-10,4.4,2.2,'BEAN TO BAR',SANS,.6,B.tx);
+else s+=t(y+h*.5+19,6.4,ls,p.s,SANS,.88)+(B.t=='frame'?'':t(y+h-16,4.8,2.4,'BEAN TO BAR',SANS,.6));
+if(B.t=='frame')s+=t(y+h-18,4.8,2.4,'BEAN TO BAR',SANS,.7);
+return s}
+
+/* per-bar extras scattered on the surface */
+const SC={
+dark:()=>bean(84,336,-26)+bean(130,352,16)+bean(352,352,56),
+int:()=>bean(84,338,-22,1,'cbean')+bean(132,354,14,1,'cbean')+bean(350,352,50,1,'cbean')+`<ellipse cx="292" cy="352" rx="64" ry="7" fill="#3a2218" opacity=".28" filter="url(#b3)"/>`,
+salt:()=>flakes(12,268,340,352,368,9)+bean(80,340,-22)+bean(128,356,14),
+hazel:()=>nut(262,352,.8)+nut(356,350,.8)+nut(300,364,.7)+bean(78,340,-22)+bean(126,356,14),
+alm:()=>alm(262,354,-20,.9)+alm(352,352,30,.9)+alm(302,368,8,.8)+bean(78,340,-22)+bean(126,356,14),
+milk:()=>bean(84,336,-26)+bean(130,352,16)+bean(352,352,56),
+esp:()=>bean(80,338,-22,1,'cbean')+bean(128,354,14,1,'cbean')+bean(262,356,40,1,'cbean')+bean(352,350,-30,1,'cbean')+bean(306,368,10,.9,'cbean'),
+nib:()=>nibs(34,236,338,362,380,21,1.3)+bean(80,340,-22)+bean(128,356,14),
+rocher:()=>nut(262,352,.95)+nut(356,350,.8)+nut(300,364,.72)+bean(78,340,-22)+bean(126,356,14),
+silk:()=>bean(84,336,-26)+bean(130,352,16)+bean(352,352,56),
+bournville:()=>bean(84,336,-26,1,'cbean')+bean(130,352,16,1,'cbean')+bean(352,352,56,1,'cbean'),
+lindt:()=>bean(84,336,-26,1,'cbean')+bean(130,352,16,1,'cbean')+bean(352,352,56,1,'cbean'),
+toblerone:()=>alm(262,354,-20,.9)+alm(352,352,30,.9)+bean(78,340,-22),
+bueno:()=>nut(262,352,.8)+nut(356,350,.8)+bean(78,340,-22)+bean(126,356,14)};
+const SF={
+dark:()=>bean(66,308,-30,1.35)+bean(112,342,22,1.25)+bean(40,264,52,1.15)+bean(330,358,64,1.25)+bean(298,374,-12,1.1)+bean(150,376,34,1.1),
+int:()=>bean(66,308,-30,1.3,'cbean')+bean(112,342,22,1.2,'cbean')+bean(330,358,64,1.2,'cbean')+bean(150,376,34,1.1,'cbean'),
+salt:()=>flakes(40,258,222,380,330,4)+flakes(18,24,290,130,392,6)+bean(66,308,-30,1.2)+bean(330,358,64,1.2),
+hazel:()=>nut(86,330,1)+nut(122,358,.9)+nut(330,350,1)+nut(360,318,.85)+nut(44,360,.9)+bean(66,296,-30,1.1)+bean(298,374,-12,1),
+alm:()=>alm(86,330,-30,1.4)+alm(124,358,20,1.3)+alm(330,352,50,1.4)+alm(362,318,-10,1.2)+alm(44,360,40,1.2)+bean(66,290,-30,1.1)+bean(298,374,-12,1),
+milk:()=>bean(66,308,-30,1.3)+bean(112,342,22,1.2)+bean(330,358,64,1.2),
+esp:()=>[[60,336,20],[104,360,-30],[336,350,50],[360,316,10],[40,290,-10],[300,376,40]].map(a=>bean(a[0],a[1],a[2],1.25,'cbean')).join(''),
+nib:()=>nibs(60,24,260,380,392,33,1.7)+bean(66,308,-30,1.1)+bean(330,358,64,1.1),
+rocher:()=>nut(86,330,1)+nut(122,358,.9)+nut(330,350,1)+nut(360,318,.85)+bean(66,296,-30,1.1),
+silk:()=>bean(66,308,-30,1.3)+bean(112,342,22,1.2)+bean(330,358,64,1.2),
+bournville:()=>bean(66,308,-30,1.35,'cbean')+bean(112,342,22,1.25,'cbean')+bean(330,358,64,1.25,'cbean'),
+lindt:()=>bean(66,308,-30,1.3,'cbean')+bean(112,342,22,1.2,'cbean')+bean(330,358,64,1.2,'cbean'),
+toblerone:()=>alm(86,330,-30,1.3)+alm(124,358,20,1.2)+bean(330,352,50,1.2),
+bueno:()=>nut(86,330,1)+nut(122,358,.9)+nut(330,350,1)+bean(66,296,-30,1.1)};
+
+/* shop card: upright pack with pieces and props */
+function cardScene(k){const p=P[k],m=p.m;let s=open('0 0 400 400',p.alt);
+s+=`<rect width="400" height="400" fill="url(#bg-${k})"/><ellipse cx="170" cy="338" rx="150" ry="20" fill="#5b4328" opacity=".16" filter="url(#bl)"/><polygon points="228,322 236,322 352,340 300,360 120,340" fill="#2a170e" opacity=".3" filter="url(#bl)"/>`;
+s+=pack(p,104,66,118,256);
+s+=blk(252,296,46,30,12,[2,2],-5,m,k)+blk(296,320,38,24,10,[2,1],8,m,k)+blk(236,330,26,17,8,[1,1],18,m,k);
+if(p.cb)s+=bowlK(k,318,282,34);
+s+=(SC[k]||(()=>''))()+crumbs(26,236,326,356,372,5);
+return s+finish(400,400)}
+
+/* top-down view on stone */
+function flatScene(k,vb){const p=P[k],m=p.m;let s=open(vb||'0 0 400 400',`${p.s.toLowerCase()} chocolate bar on a stone surface`);
+s+=`<rect width="400" height="400" fill="#c9b595"/>`+stone('M0 0H400V400H0Z',p.st,.55)+`<rect width="400" height="400" fill="url(#fall)"/>`;
+if(p.lf)s+=`<g opacity=".22" filter="url(#b10)">${leaf(6,34,38,1.15)}${leaf(-6,96,12,1)}</g>`+leaf(2,26,38,1.1,'b3')+leaf(-10,88,12,.95,'b3');
+s+=bowlK(k,362,48,56);
+s+=`<g transform="rotate(${p.rot} 190 205)"><rect x="140" y="90" width="118" height="256" fill="#1a0d06" opacity=".5" filter="url(#bl)"/>${pack(p,128,76,118,256)}</g>`;
+s+=blk(268,236,46,30,11,[2,2],-9,m,k)+blk(300,282,40,26,10,[2,1],8,m,k)+blk(268,300,28,19,8,[1,1],24,m,k);
+s+=(SF[k]||(()=>''))()+crumbs(46,30,230,380,396,12);
+return s+finish(400,400)}
+
+/* hero: chocolate stack and beans on a stone slab, out-of-focus leaves */
+function heroScene(vb){const p=P.dark;let s=open(vb||'0 0 400 460','Dark chocolate bars and cacao beans on a stone slab','xMidYMax slice');
+s+=`<rect width="400" height="460" fill="url(#wall)"/>`;
+s+=`<g filter="url(#b10)" opacity=".2"><path d="M-10 200C20 150 80 140 130 170C90 215 30 250 -10 200Z" fill="#6f5436"/><path d="M-20 280C30 240 100 250 140 290C90 320 20 330 -20 280Z" fill="#6f5436"/></g>`;
+s+=`<g filter="url(#b3)" opacity=".92">${leaf(430,70,150,1.7)}${leaf(420,150,170,1.5)}${leaf(396,40,118,1.25)}<path d="M290 70Q330 120 372 168" stroke="#4a4a2a" stroke-width="3" fill="none" opacity=".5"/></g>`;
+s+=`<g filter="url(#b10)" opacity=".5"><ellipse cx="300" cy="150" rx="70" ry="50" fill="#f3ebdc"/></g>`;
+const top='M-4 376C34 352 84 346 146 343L404 332V420L-4 428Z',front='M-4 420L404 412V470H-4Z';
+s+=stone(top,'#b99f78',.5)+stone(front,'#86704f',.62);
+s+=`<path d="M-4 376C34 352 84 346 146 343L404 332" stroke="#fff" stroke-opacity=".35" stroke-width="1.4" fill="none"/>`;
+s+=`<ellipse cx="260" cy="372" rx="170" ry="16" fill="#2a170e" opacity=".42" filter="url(#bl)"/>`;
+s+=blk(262,330,118,22,16,[5,1],0,0)+blk(272,306,118,22,16,[5,1],0,0)+blk(258,282,118,22,16,[5,1],0,0);
+s+=`<g transform="rotate(-13 200 372)"><rect x="150" y="226" width="100" height="148" fill="#1a0d06" opacity=".5" filter="url(#bs)" transform="translate(8 6)"/>${pack(p,142,222,100,150)}</g>`;
+s+=blk(318,372,30,16,8,[1,1],-6,0)+blk(352,376,24,14,7,[1,1],14,0);
+s+=bean(54,384,-20,1.6)+bean(104,398,26,1.5)+bean(140,378,8,1.3)+bean(26,368,44,1.35)+bean(176,398,-14,1.4)+bean(238,392,20,1.2);
+s+=crumbs(60,20,372,300,408,31);
+return s+finish(400,460,0,0)}
+
+/* story card: cacao pods on stone */
+function podScene(){let s=open('0 0 300 200','Cacao pods resting on a stone surface');
+s+=`<rect width="300" height="200" fill="#a8a06a"/><rect width="300" height="200" fill="url(#leaf)" opacity=".7"/>`;
+s+=`<g filter="url(#b3)" opacity=".85">${leaf(150,20,-18,1.2)}${leaf(300,50,160,1.4)}${leaf(-10,60,24,1.1)}</g><g filter="url(#b10)" opacity=".5"><ellipse cx="150" cy="70" rx="120" ry="40" fill="#e8dcae"/></g>`;
+s+=stone('M-4 130C60 118 160 112 304 120V204H-4Z','#a88d64',.55)+`<ellipse cx="170" cy="136" rx="120" ry="10" fill="#2a170e" opacity=".4" filter="url(#bs)"/>`;
+const pod=(x,y,r,sc)=>`<g transform="translate(${x} ${y}) rotate(${r}) scale(${sc})"><ellipse cx="3" cy="22" rx="42" ry="7" fill="#1d0f08" opacity=".45" filter="url(#bs)"/><path d="M-40 0C-30 -22 24 -24 44 -2C48 0 48 3 44 5C24 26 -30 24 -40 0Z" fill="url(#pod)"/><path d="M-36 -2C-10 -13 20 -13 42 -1" stroke="#3f1d0b" stroke-opacity=".55" stroke-width="1.2" fill="none"/><path d="M-37 3C-10 -2 20 -2 43 3" stroke="#3f1d0b" stroke-opacity=".45" stroke-width="1.2" fill="none"/><path d="M-34 10C-8 8 18 9 38 11" stroke="#3f1d0b" stroke-opacity=".4" stroke-width="1.2" fill="none"/><ellipse cx="-8" cy="-11" rx="20" ry="3.4" fill="#fff" opacity=".2"/><path d="M-40 0q-6 0-8 3" stroke="#4a2a14" stroke-width="3" fill="none"/></g>`;
+s+=pod(116,128,-10,1.35)+pod(214,150,14,1.1);
+s+=bean(40,164,30,1.2)+bean(70,180,-14,1.1)+bean(262,176,40,1.1)+crumbs(20,20,150,290,196,50);
+return s+finish(300,200)}
+
+/* view registry */
+const BVIEW=['flat','card','pieces','detail'];
+const VB={flat:'0 0 400 400',pieces:'206 120 194 194',detail:'0 190 200 200'};
+const find2=k=>PR.find(p=>p.k==k);
+function scene(k,view='card'){const key=k+':'+view;if(PHOTOS[key])return `<img src="${PHOTOS[key]}" alt="${find2(k).n}" loading="lazy">`;
+return view=='card'?cardScene(k):flatScene(k,VB[view])}
+const img=(key,fn)=>PHOTOS[key]?`<img src="${PHOTOS[key]}" alt="" loading="lazy">`:fn();
+
+/* ---------- state ---------- */
+let V='home',pid=1,ps={s:0,q:1,i:0},fav=new Set(),cart=[],filt='All',sq='',sopen=false,so='feat';
+const $=id=>document.getElementById(id),$c=()=>cart.reduce((n,c)=>n+c.q,0);
+const money=n=>'₹'+Math.round(Number(n)||0).toLocaleString('en-IN'),find=id=>PR.find(p=>p.id==id);
+const SORTS=[['feat','Featured'],['lo','Price: low to high'],['hi','Price: high to low'],['cp','Cacao: high to low']];
+const FILTERS=['All','Dark','Milk','Nuts','Flavoured','Bars','Confections','Gifts'];
+const hay=p=>(p.n+' '+p.d+' '+p.nt+' '+p.ds+' '+p.ing+' '+p.cat.join(' ')+' '+p.c).toLowerCase();
+
+function shopList(){const q=sq.trim().toLowerCase().split(/\s+/).filter(Boolean);
+let l=PR.filter(p=>(filt=='All'||p.cat.includes(filt))&&q.every(w=>hay(p).includes(w)));
+if(so=='lo')l=[...l].sort((a,b)=>a.pr[0]-b.pr[0]||a.id-b.id);
+else if(so=='hi')l=[...l].sort((a,b)=>b.pr[0]-a.pr[0]||a.id-b.id);
+else if(so=='cp')l=[...l].sort((a,b)=>b.cp-a.cp||a.id-b.id);
+return l}
+const gridHTML=l=>l.length?l.map(card).join(''):'<p class="none">No chocolate matches that search.</p>';
+const cnt=l=>l.length+(l.length==1?' chocolate':' chocolates');
+function related(p){return PR.filter(x=>x.id!=p.id).map(x=>({x,s:x.cat.filter(c=>p.cat.includes(c)).length})).sort((a,b)=>b.s-a.s||a.x.id-b.x.id).slice(0,4).map(o=>o.x)}
+
+function card(p){return `<article class="card" data-id="${p.id}"><div class="ph">${scene(p.k)}${p.tag?`<span class="tag">${p.tag}</span>`:''}<button class="fav${fav.has(p.id)?' on':''}" data-fav="${p.id}" aria-label="Save ${p.n}">${I('heart')}</button></div><div class="cb"><small class="ce">${p.cp?`${p.c} CACAO`:(p.c=='MILK'?'MILK CHOCOLATE':'CONFECTION')}</small><h3>${p.n}</h3><p>${p.d}</p><b>${money(p.pr[0])}</b></div></article>`}
+const foot=()=>`<footer class="fx"><div class="logo" data-go="home">NOVA<small>CHOCOLATE & CONFECTIONS</small></div><nav aria-label="Footer"><button data-go="home">Home</button><button data-go="shop">Shop</button><button data-go="story">Our Story</button></nav><p>&copy; NOVA CHOCOLATE</p></footer>`;
+
+function head(){const pv=V=='p';$('hd').className='hd'+(pv?' pv':'');
+$('hd').innerHTML=`<div class="hleft">${pv?`<button class="ib" data-act="back" aria-label="Back">${I('back')}</button>`:`<button class="ib mb" data-act="menu" aria-label="Open menu">${I('menu')}</button>`}<nav class="dn"><button data-go="home">Home</button><button data-go="shop">Shop</button><button data-cat="Dark">Dark</button><button data-cat="Confections">Confections</button><button data-go="story">Our Story</button></nav></div><div class="logo" data-go="home">NOVA<small>CHOCOLATE & CONFECTIONS</small></div><div class="hright"><button class="ib" data-act="search" aria-label="Search">${I('search')}</button>${pv?`<button class="ib fv${fav.has(pid)?' on':''}" data-fav="${pid}" aria-label="Save this chocolate">${I('heart')}</button>`:`<button class="ib fv" data-act="saved" aria-label="Saved chocolates">${I('heart')}</button>`}<button class="ib" data-act="cart" aria-label="Bag">${I('bag')}${$c()?`<span class="bc">${$c()}</span>`:''}</button></div>`}
+
+
+const STEPS=[['Roast','Cacao is roasted in small batches and tasted before it moves on.'],['Grind','Ground slowly with sugar and cocoa butter until fully smooth.'],['Temper','Tempered for a clean snap and a glossy finish.'],['Wrap','Wrapped in paper and sent out. Nothing more.']];
+const TYPES=[['Dark','int'],['Milk','milk'],['Nuts','alm'],['Confections','rocher'],['Bars','silk'],['Gifts','raffaello']];
+
+const VIEWS={
+home(){const byCp=[...PR].sort((a,b)=>b.cp-a.cp);
+return `<section class="hero"><div class="ht"><small>Chocolate, gifts & everyday favourites</small><h1>Chocolate for<br>every mood.</h1><p>From dark cacao bars to creamy favourites, hazelnut confections and giftable boxes. A considered collection for every kind of chocolate craving.</p></div><div class="hi"><div class="hm" style="height:100%">${img('hero',()=>heroScene())}</div><div class="hdk" style="height:100%">${img('hero',()=>heroScene('0 100 400 360'))}</div></div></section>
+<section class="sc" id="story"><div class="tx"><span class="lab">Our story</span><h3>Cacao, sugar and not much else.</h3><p>We keep recipes short so the cacao can do the talking. Every batch is tasted before it is wrapped.</p></div><div class="si">${img('story',()=>podScene())}</div><button class="ar" data-go="shop" aria-label="Shop all">${I('arr')}</button></section>
+<div class="sh"><h2>Featured Collection</h2><button data-go="shop">View all ${I('arr')}</button></div><div class="g f">${[1,9,10,15,4,12,16,17].map(i=>card(find(i))).join('')}</div>
+<div class="sh"><h2>Shop by type</h2></div><div class="tiles">${TYPES.map(([c,k])=>{const n=PR.filter(p=>p.cat.includes(c)).length;return `<button class="tile" data-cat="${c}"><div class="ph">${scene(k,'flat')}</div><b>${c}</b><span>${n} ${n==1?'bar':'bars'}</span></button>`}).join('')}</div>
+<section class="sw"><div><h2>By cacao content</h2><p>From 45 percent milk to 85 percent dark. Pick a strength and see what sits around it.</p></div><div class="sl">${byCp.map(p=>`<button class="sr" data-id="${p.id}"><span class="sn">${p.n}<small>${p.nt}</small></span><span class="sbar"><i style="width:${p.cp}%"></i></span><span class="sp">${p.c}</span></button>`).join('')}</div></section>
+<div class="sh"><h2>How it is made</h2></div><div class="stp">${STEPS.map((s,i)=>`<div><i>${i+1}</i><h3>${s[0]}</h3><p>${s[1]}</p></div>`).join('')}</div>
+${foot()}`},
+shop(){const l=shopList();
+return `<div class="sp0"><h1>Explore Chocolate.</h1><p>Dark bars, milk favourites, confections and giftable chocolate.</p><input id="sq" class="srch" type="search" placeholder="Search chocolate" value="${sq.replace(/"/g,'&quot;')}" aria-label="Search chocolate" autocomplete="off"><div class="chs">${FILTERS.map(c=>`<button class="c${c==filt?' on':''}" data-f="${c}">${c}</button>`).join('')}</div><div class="tools"><span id="cnt">${cnt(l)}</span><button type="button" id="so" class="sel" data-act="sort" aria-haspopup="dialog" aria-label="Sort chocolate">${sortLabel()}</button></div><div class="g" id="grid">${gridHTML(l)}</div></div>${foot()}`},
+p(){const p=find(pid),tot=p.pr[ps.s]*ps.q;
+return `<div class="pd"><div class="gal"><div class="pm">${scene(p.k,BVIEW[ps.i])}</div><div class="th">${BVIEW.map((v,i)=>`<button class="${i==ps.i?'on':''}" data-i="${i}" aria-label="View ${i+1}">${scene(p.k,v)}</button>`).join('')}</div><div class="dots" aria-hidden="true">${BVIEW.map((v,i)=>`<i class="${i==ps.i?'on':''}"></i>`).join('')}</div></div>
+<div class="in"><h1>${p.n}</h1><div class="rt">${p.d}</div><div class="pr">${money(p.pr[ps.s])}</div><p>${p.ds}</p>
+<div class="r"><span>Cacao</span><span>${p.c}</span></div>
+<div class="r"><span>Tasting notes</span><span>${p.nt}</span></div>
+<div class="r"><span>Size</span><div>${p.sz.map((z,i)=>`<button class="o${i==ps.s?' on':''}" data-s="${i}">${z}</button>`).join('')}</div></div>
+<div class="buy"><div class="q"><button data-q="-1" aria-label="Less">${I('min')}</button><span>${ps.q}</span><button data-q="1" aria-label="More">${I('plus')}</button></div><button class="add" data-act="add"><i>${I('bag')}<span>Add to Cart</span></i><b>${money(tot)}</b></button></div>
+<div class="dt"><div class="r col"><span>Ingredients</span><span>${p.ing}</span></div><div class="r col"><span>Contains</span><span>${p.alg}</span></div><div class="r col"><span>Pairs with</span><span>${p.pair}</span></div></div>
+<div class="su"><div>${I('leaf')}Short ingredient list</div><div>${I('box')}Made in small batches</div><div>${I('ok')}Recyclable paper wrap</div></div></div></div>
+<div class="sh"><h2>More chocolate</h2><button data-go="shop">View all ${I('arr')}</button></div><div class="g f">${related(p).map(card).join('')}</div>${foot()}`}};
+
+function render(after){head();$('app').innerHTML=VIEWS[V]();$('app').classList.remove('fd');void $('app').offsetWidth;$('app').classList.add('fd');
+['home','shop','story'].forEach(n=>$('n-'+n).classList.toggle('on',n==(V=='p'?'shop':V)));
+if(after)after();else window.scrollTo(0,0)}
+function go(v){if(v=='story'){V='home';render(()=>{const s=$('story');s&&s.scrollIntoView({behavior:'smooth',block:'center'})});$('n-home').classList.remove('on');$('n-story').classList.add('on')}else{V=v;render()}}
+function sheet(h,cls){const b=$('sb');b.className='sb'+(cls?' '+cls:'');b.style.transform='';b.style.transition='';b.innerHTML=h;$('sheet').classList.add('open')}
+const XI='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>';
+const sortLabel=()=>(SORTS.find(x=>x[0]==so)||SORTS[0])[1];
+function menuSheet(){sheet(`<div class="sx-gp" aria-hidden="true"></div><div class="sx-hd"><span class="sx-eb">MENU</span><button class="sx-x" data-act="close" aria-label="Close menu">${XI}</button></div><nav class="sx-mn" aria-label="Menu"><button class="sx-mi" data-go="home"><span>Home</span>${I('arr')}</button><button class="sx-mi" data-go="shop"><span>Shop</span>${I('arr')}</button><button class="sx-mi" data-go="story"><span>Our Story</span>${I('arr')}</button></nav>`,'sx')}
+function sortSheet(){sheet(`<div class="sx-gp" aria-hidden="true"></div><div class="sx-hd"><h2 id="sx-t">Sort by</h2><button class="sx-x" data-act="close" aria-label="Close sort options">${XI}</button></div><div class="sx-ops" role="radiogroup" aria-labelledby="sx-t">${SORTS.map(([v,t])=>`<button class="sx-op" role="radio" aria-checked="${v==so}" data-so="${v}"><span>${t}</span><i class="sx-ck" aria-hidden="true"></i></button>`).join('')}</div>`,'sx')}
+/* drag the handle down to dismiss */
+(function(){let y0=null,dy=0;const sb=$('sb');
+sb.addEventListener('pointerdown',e=>{if(!e.target.closest('.sx-gp'))return;y0=e.clientY;dy=0;sb.style.transition='none';try{e.target.setPointerCapture(e.pointerId)}catch(_){}});
+sb.addEventListener('pointermove',e=>{if(y0===null)return;dy=Math.max(0,e.clientY-y0);sb.style.transform='translateY('+dy+'px)'});
+const end=()=>{if(y0===null)return;y0=null;sb.style.transition='';sb.style.transform='';if(dy>70)$('sheet').classList.remove('open');dy=0};
+sb.addEventListener('pointerup',end);sb.addEventListener('pointercancel',end)})();
+document.addEventListener('keydown',e=>{if(e.key=='Escape')$('sheet').classList.remove('open')});
+/* ---------- ordering: bag, checkout, orders, account ---------- */
+IC.rec='M7 3h10v18l-2.5-1.5L12 21l-2.5-1.5L7 21zM10 8h4M10 12h4';
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])),mem={};
+const LS={get(k,d){try{const v=localStorage.getItem(k);if(v!==null)return JSON.parse(v)}catch(_){}return k in mem?mem[k]:d},set(k,v){mem[k]=v;try{localStorage.setItem(k,JSON.stringify(v))}catch(_){}}};
+/* Restore cart and saved products on refresh. */
+cart=(()=>{const v=LS.get('nova_cart',[]);return Array.isArray(v)?v.filter(c=>c&&typeof c==='object'&&find(c.id)&&Number.isInteger(+c.s)&&find(c.id).pr[+c.s]!==undefined&&Number.isFinite(+c.q)&&+c.q>0).map(c=>({id:+c.id,s:+c.s,q:Math.min(20,Math.max(1,+c.q))})):[]})();
+fav=new Set((()=>{const v=LS.get('nova_favs',[]);return Array.isArray(v)?v.map(Number).filter(id=>find(id)):[]})());
+const persistCart=()=>LS.set('nova_cart',cart),persistFavs=()=>LS.set('nova_favs',[...fav]);
+const orders=()=>{const a=LS.get('nova_orders',[]);return Array.isArray(a)?a.filter(o=>o&&o.id&&Array.isArray(o.items)&&o.cust&&o.addr):[]};
+const getO=id=>orders().find(o=>o.id==id);
+const STATUS=['Order Placed','Preparing','Out for Delivery','Delivered'],PAY={cod:['Cash on Delivery','Pay in cash when your order arrives'],upi:['UPI (demo)','Pay with any UPI app'],card:['Card (demo)','Credit or debit card']};
+const KEYS=['name','phone','email','house','street','city','state','pin'];
+const fmtD=i=>{const d=new Date(i);return isNaN(d)?'':d.toLocaleString('en-GB',{day:'numeric',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit',hour12:true})};
+const FREE_SHIP_AT=999, DELIVERY_FEE=49;
+const calc=()=>{const sub=cart.reduce((n,c)=>n+find(c.id).pr[c.s]*c.q,0),ship=sub>=FREE_SHIP_AT||!sub?0:DELIVERY_FEE;return{sub,ship,total:sub+ship}};
+const hintT=s=>s>=FREE_SHIP_AT?'Free delivery applied.':`Free delivery on orders over ${money(FREE_SHIP_AT)}.`;
+const sx=(t,x)=>`<div class="sx-gp" aria-hidden="true"></div><div class="sx-hd"><h2>${t}</h2><button class="sx-x" data-act="close" aria-label="Close">${XI}</button></div>${x}`;
+const empty=(ic,h,p,b,a)=>`<div class="o-es"><i>${I(ic)}</i><h3>${h}</h3><p>${p}</p><button class="o-b" ${a}>${b}</button></div>`;
+const pop=el=>{if(!el)return;el.classList.remove('pop');void el.offsetWidth;el.classList.add('pop')};
+let ck={pay:'cod',note:''},prof=(()=>{const v=LS.get('nova_profile',{});return v&&typeof v==='object'&&!Array.isArray(v)?v:{}})(),fo=ck,pgv=null,pgd=null,busy=false,pgFrom=null;
+
+/* bag */
+const cLine=(c,i)=>{const p=find(c.id),u=p.pr[c.s];return `<div class="o-ci" data-row="${i}"><div><div class="o-nm">${p.n}</div><div class="o-mt">${p.sz[c.s]} · ${money(u)} each</div><div class="o-rw"><div class="o-qs" role="group" aria-label="Quantity"><button data-oa="cq" data-ix="${i}" data-dl="-1" aria-label="Decrease quantity"${c.q<2?' disabled':''}>${I('min')}</button><output>${c.q}</output><button data-oa="cq" data-ix="${i}" data-dl="1" aria-label="Increase quantity"${c.q>19?' disabled':''}>${I('plus')}</button></div><button class="o-rm" data-oa="rm" data-ix="${i}">Remove</button></div></div><b class="o-lt">${money(u*c.q)}</b></div>`};
+function cartSheet(){const n=$c(),t=calc();sheet(sx('Your Bag'+(n?`<span class="o-ct">${n} item${n>1?'s':''}</span>`:''),cart.length?`<div>${cart.map(cLine).join('')}</div><div class="o-tt"><span>Subtotal</span><b id="cs-sub">${money(t.sub)}</b></div><p class="o-hint" id="cs-h">${hintT(t.sub)}</p><button class="o-b" data-oa="checkout">Checkout</button><button class="o-b gh" data-act="close">Continue shopping</button>`:empty('bag','Your bag is empty','Chocolate you add will appear here.','Explore chocolate','data-go="shop"')),'sx')}
+function cq(i,d){const c=cart[i];if(!c)return;const q=Math.max(1,Math.min(20,c.q+d));if(q==c.q)return;c.q=q;persistCart();head();const r=document.querySelector(`.o-ci[data-row="${i}"]`),b=r.querySelectorAll('.o-qs button'),lt=r.querySelector('.o-lt'),t=calc(),n=$c();r.querySelector('output').textContent=q;b[0].disabled=q<2;b[1].disabled=q>19;lt.textContent=money(find(c.id).pr[c.s]*q);pop(lt);$('cs-sub').textContent=money(t.sub);pop($('cs-sub'));$('cs-h').textContent=hintT(t.sub);document.querySelector('.o-ct').textContent=n+' item'+(n>1?'s':'')}
+function rmItem(i){const r=document.querySelector(`.o-ci[data-row="${i}"]`);if(!r||r.classList.contains('go'))return;r.style.maxHeight=r.offsetHeight+'px';void r.offsetHeight;r.classList.add('go');setTimeout(()=>{cart.splice(i,1);persistCart();head();if($('sheet').classList.contains('open'))cartSheet()},280)}
+
+/* account */
+function acctSheet(){const o=orders().length,f=fav.size,row=(a,ic,t,s)=>`<button class="o-ac" data-oa="${a}"><i>${I(ic)}</i><span><b>${t}</b><small>${s}</small></span>${I('arr')}</button>`;sheet(sx('Account',row('orders','rec','My Orders',o?o+' order'+(o>1?'s':''):'No orders yet')+row('saved','heart','Saved Items',f?f+' saved':'Nothing saved yet')+row('details','user','Account Details',prof.name?esc(prof.name):'Add your details')),'sx')}
+function savedSheet(back){const l=[...fav].map(find);sheet(sx('Saved Items',(l.length?l.map(p=>`<button class="o-ac" data-id="${p.id}"><span><b>${p.n}</b><small>${p.d} · ${money(p.pr[0])}</small></span>${I('arr')}</button>`).join(''):empty('heart','Nothing saved yet','Tap the heart on any bar to keep it here.','Explore chocolate','data-go="shop"'))+(back===true?'<button class="o-b gh" data-oa="acct">Back to Account</button>':'')),'sx')}
+
+/* full-screen pages */
+const bar=(t,x)=>`<button class="ib" data-oa="back" aria-label="${x?'Close':'Back'}">${x?XI:I('back')}</button><h1 id="pgh" tabindex="-1">${t}</h1><span></span>`;
+const fld=(k,l,o={})=>`<div class="o-fl"><label for="f-${k}">${l}</label><input id="f-${k}" data-fk="${k}" value="${esc(fo[k])}" autocomplete="${o.ac}" type="${o.t||'text'}"${o.im?` inputmode="${o.im}"`:''}${o.mx?` maxlength="${o.mx}"`:''}><p class="o-er" id="e-${k}" role="alert"></p></div>`;
+const contact=()=>fld('name','Full Name',{ac:'name'})+fld('phone','Mobile Number',{ac:'tel',t:'tel',im:'tel'})+fld('email','Email Address',{ac:'email',t:'email'});
+const addr=()=>fld('house','House / Flat No.',{ac:'address-line1'})+fld('street','Street / Area',{ac:'address-line2'})+`<div class="o-fr">${fld('city','City',{ac:'address-level2'})+fld('state','State',{ac:'address-level1'})}</div><div class="o-fr">${fld('pin','PIN Code',{ac:'postal-code',im:'numeric',mx:6})}</div>`;
+const tots=o=>`<div class="o-tt"><span>Subtotal</span><b>${money(o.sub)}</b></div><div class="o-tt"><span>Delivery</span><b>${o.ship?money(o.ship):'Free'}</b></div><div class="o-tt gr"><span>Total</span><b>${money(o.total)}</b></div>`;
+function pgRender(){let t,b,f='';
+if(pgv=='checkout'){fo=ck;const s=calc();t=bar('Checkout');
+b=`<form id="ckf" novalidate><section class="o-sec"><p class="o-eh">CONTACT</p>${contact()}</section><section class="o-sec"><p class="o-eh">DELIVERY ADDRESS</p>${addr()}<div class="o-fl"><label for="f-note">Delivery Note <span>(optional)</span></label><textarea id="f-note" data-fk="note" rows="2">${esc(ck.note)}</textarea></div></section><section class="o-sec"><p class="o-eh">ORDER SUMMARY</p>${cart.map(c=>{const p=find(c.id),u=p.pr[c.s];return `<div class="o-si"><span>${p.n}<small>${p.sz[c.s]} · qty ${c.q} · ${money(u)} each</small></span><b>${money(u*c.q)}</b></div>`}).join('')}${tots({sub:s.sub,ship:s.ship,total:s.total})}</section><section class="o-sec"><p class="o-eh">PAYMENT</p><div role="radiogroup" aria-label="Payment method">${Object.entries(PAY).map(([k,v])=>`<button type="button" class="o-pm" role="radio" aria-checked="${ck.pay==k}" data-oa="pay" data-k="${k}"><span><b>${v[0].replace(' (demo)','')}</b><small>${v[1]}</small></span><i class="sx-ck"></i></button>`).join('')}</div><p class="o-note${ck.pay!='cod'?' on':''}" id="pn">Payment integration coming soon. This is a demo selection and no payment is taken.</p></section><p class="o-demo">Demo store • No real payment is taken</p></form>`;
+f=`<div><small>TOTAL</small><b>${money(s.total)}</b></div><button class="o-b" id="po" type="button" data-oa="place">Place Order</button>`}
+else if(pgv=='done'){const o=getO(pgd)||{id:pgd,cust:{},status:STATUS[0]};t=bar('Order Confirmed',1);
+b=`<div class="o-cf"><svg class="o-ck2" viewBox="0 0 72 72" fill="none" stroke="#b09462" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="36" cy="36" r="30"/><path d="M24 37l8 8 16-18"/></svg><p class="o-eh">ORDER CONFIRMED</p><h2>Order placed successfully</h2><p class="o-mu">It is saved under My Orders.</p><div class="o-card"><small>ORDER ID</small><strong>${esc(o.id)}</strong>${[['Customer',o.cust.name],['Total',money(o.total)],['Payment',o.payLabel],['Status',o.status]].map(([k,v])=>`<div class="o-tt"><span>${k}</span><b>${esc(v)}</b></div>`).join('')}</div><button class="o-b" data-oa="shop">Continue Shopping</button><button class="o-b gh" data-oa="vo" data-oid="${esc(o.id)}">View Order</button><p class="o-demo">Demo store • No real payment is taken</p></div>`}
+else if(pgv=='orders'){const l=orders();t=bar('My Orders');
+b=l.length?l.map(o=>`<button class="o-oc" data-oa="vo" data-oid="${esc(o.id)}"><span class="o-oh"><b>${esc(o.id)}</b><em class="o-st">${esc(o.status)}</em></span><small>${fmtD(o.at)}</small>${o.items.slice(0,3).map(i=>`<span class="o-il"><span>${esc(i.n)} · ${esc(i.sz)}</span><i>×${+i.q}</i></span>`).join('')}${o.items.length>3?`<small>+${o.items.length-3} more</small>`:''}<span class="o-oh o-of"><span>${esc(o.payLabel)}</span><b>${money(+o.total)}</b></span></button>`).join(''):empty('rec','No orders yet','Orders you place will be listed here.','Explore chocolate','data-oa="shop"')}
+else if(pgv=='order'){const o=getO(pgd);if(!o){pgv='orders';return pgRender()}const ix=Math.max(0,STATUS.indexOf(o.status)),a=o.addr;t=bar('Order Details');
+b=`<p class="o-eh" style="margin-top:20px">${esc(o.id)}</p><span class="o-mu">Placed ${fmtD(o.at)}</span><ol class="o-stp">${STATUS.map((s,i)=>`<li class="${i<ix?'d':i==ix?'c':''}"><i></i>${s}</li>`).join('')}</ol><section class="o-sec"><p class="o-eh">ITEMS</p>${o.items.map(i=>`<div class="o-si"><span>${esc(i.n)}<small>${esc(i.sz)} · qty ${+i.q} · ${money(+i.u)} each</small></span><b>${money(+i.t)}</b></div>`).join('')}${tots(o)}</section><section class="o-sec"><p class="o-eh">PAYMENT</p><p>${esc(o.payLabel)}</p></section><section class="o-sec"><p class="o-eh">DELIVERY</p><p>${esc(o.cust.name)}<br>${esc(a.house)}, ${esc(a.street)}<br>${esc(a.city)}, ${esc(a.state)} ${esc(a.pin)}<br>${esc(o.cust.phone)} · ${esc(o.cust.email)}</p>${o.note?`<p class="o-mu" style="margin-top:8px">Note: ${esc(o.note)}</p>`:''}</section>`}
+else{fo=prof;t=bar('Account Details');b=`<form id="dtf" novalidate><p class="o-mu" style="margin:18px 0 0">Saved on this device only and used to fill in checkout.</p><section class="o-sec"><p class="o-eh">CONTACT</p>${contact()}</section><section class="o-sec"><p class="o-eh">DEFAULT ADDRESS</p>${addr()}</section><button class="o-b" type="submit" id="sd">Save details</button></form>`}
+$('pgt').innerHTML=t;$('pgb').innerHTML=`<div class="o-pgw o-in">${b}</div>`;$('pgf').innerHTML=f;$('pgf').style.display=f?'':'none'}
+function pgOpen(v,d){const pg=$('pg'),first=!pg.classList.contains('open');if(first)pgFrom=document.activeElement;pgv=v;pgd=d;$('sheet').classList.remove('open');pgRender();$('pgb').scrollTop=0;pg.classList.add('open');pg.setAttribute('aria-hidden','false');const h=$('pgh');h&&h.focus({preventScroll:true})}
+function pgClose(){const pg=$('pg');pg.classList.remove('open');pg.setAttribute('aria-hidden','true');pgv=null;pgFrom&&document.contains(pgFrom)&&pgFrom.focus&&pgFrom.focus({preventScroll:true})}
+function pgBack(){const v=pgv;if(v=='checkout'){pgClose();cartSheet()}else if(v=='order')pgOpen('orders');else if(v=='orders'||v=='details'){pgClose();acctSheet()}else if(v=='done'){pgClose();go('shop')}}
+function openCheckout(){if(!cart.length)return;KEYS.forEach(k=>{if(!ck[k])ck[k]=prof[k]||''});pgOpen('checkout')}
+function setPay(k){ck.pay=k;document.querySelectorAll('.o-pm').forEach(b=>b.setAttribute('aria-checked',b.dataset.k==k));$('pn').classList.toggle('on',k!='cod')}
+
+/* validation + placing the order */
+const VAL={name:v=>v.trim().length>1||'Enter your full name',phone:v=>{const d=v.replace(/\D/g,'');return d.length==10||(d.length==12&&d.slice(0,2)=='91')||(d.length==11&&d[0]=='0')||'Enter a valid 10-digit mobile number'},email:v=>/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim())||'Enter a valid email address',house:v=>!!v.trim()||'Enter your house or flat number',street:v=>!!v.trim()||'Enter your street or area',city:v=>!!v.trim()||'Enter your city',state:v=>!!v.trim()||'Enter your state',pin:v=>/^\d{6}$/.test(v.trim())||'Enter a 6-digit PIN code'};
+function setErr(k,m){const e=$('e-'+k),i=$('f-'+k);if(!e||!i)return;e.textContent=m||'';i.parentNode.classList.toggle('bad',!!m);i.setAttribute('aria-invalid',!!m)}
+function check(req){let first=null;KEYS.forEach(k=>{const v=fo[k]||'',r=(!req&&!v.trim())?true:VAL[k](v);setErr(k,r===true?'':r);if(r!==true&&!first)first=k});if(first){const i=$('f-'+first);i.scrollIntoView({block:'center',behavior:'smooth'});i.focus({preventScroll:true})}return !first}
+function placeOrder(){if(busy||pgv!='checkout'||!cart.length||!check(true))return;busy=true;const b=$('po');b.disabled=true;b.textContent='Placing order...';
+setTimeout(()=>{busy=false;if(pgv!='checkout'||!cart.length)return;const s=calc(),ex=new Set(orders().map(o=>o.id));let id;do{id='NOVA-'+Array.from({length:6},()=>'ABCDEFGHJKLMNPQRSTUVWXYZ23456789'[Math.random()*32|0]).join('')}while(ex.has(id));
+const T=k=>(ck[k]||'').trim(),o={id,at:new Date().toISOString(),status:STATUS[0],items:cart.map(c=>{const p=find(c.id),u=p.pr[c.s];return{n:p.n,sz:p.sz[c.s],q:c.q,u,t:u*c.q}}),sub:s.sub,ship:s.ship,total:s.total,pay:ck.pay,payLabel:PAY[ck.pay][0],cust:{name:T('name'),phone:T('phone'),email:T('email')},addr:{house:T('house'),street:T('street'),city:T('city'),state:T('state'),pin:T('pin')},note:T('note')};
+LS.set('nova_orders',[o,...orders()]);cart.length=0;persistCart();prof={};KEYS.forEach(k=>prof[k]=T(k));LS.set('nova_profile',prof);cart.length=0;ck.note='';head();pgOpen('done',id)},650)}
+function saveDetails(){if(!check(false))return;const n={};KEYS.forEach(k=>n[k]=(fo[k]||'').trim());prof=n;fo=n;LS.set('nova_profile',n);const b=$('sd');b.textContent='Saved';setTimeout(()=>{if($('sd'))$('sd').textContent='Save details'},1400)}
+
+/* wiring */
+const _head=head;head=function(){const o=document.querySelector('.bc'),before=o?+o.textContent:0;_head();const n=document.querySelector('.bc');if(n&&+n.textContent!==before)n.classList.add('bump')};
+document.addEventListener('click',e=>{const t=e.target.closest('[data-oa]');if(!t)return;const d=t.dataset;
+({cq:()=>cq(+d.ix,+d.dl),rm:()=>rmItem(+d.ix),checkout:openCheckout,orders:()=>pgOpen('orders'),details:()=>pgOpen('details'),saved:()=>savedSheet(true),acct:acctSheet,back:pgBack,pay:()=>setPay(d.k),place:placeOrder,vo:()=>pgOpen('order',d.oid),shop:()=>{pgClose();go('shop')}})[d.oa]()});
+$('pg').addEventListener('submit',e=>{e.preventDefault();e.target.id=='ckf'?placeOrder():saveDetails()});
+$('pg').addEventListener('input',e=>{const t=e.target,k=t.dataset.fk;if(!k)return;let v=t.value;if(k=='pin'){v=v.replace(/\D/g,'').slice(0,6);t.value=v}else if(k=='phone'){v=v.replace(/[^\d+\-\s()]/g,'');t.value=v}fo[k]=v;setErr(k,'')});
+$('pg').addEventListener('focusout',e=>{const k=e.target.dataset.fk;if(k&&VAL[k]&&(fo[k]||'').trim()){const r=VAL[k](fo[k]);setErr(k,r===true?'':r)}});
+document.addEventListener('keydown',e=>{if(e.key=='Escape'&&pgv)pgBack()});
+
+$('n-home').innerHTML=I('home')+'<span>Home</span>';$('n-shop').innerHTML=I('shop')+'<span>Products</span>';$('n-story').innerHTML=I('leaf')+'<span>Our Story</span>';$('n-acct').innerHTML=I('user')+'<span>Account</span>';
+
+function upd(){const l=shopList();$('grid').innerHTML=gridHTML(l);$('cnt').textContent=cnt(l)}
+document.addEventListener('input',e=>{if(e.target.id=='sq'){sq=e.target.value;upd()}});
+document.addEventListener('click',e=>{const t=e.target.closest('[data-fav],[data-id],[data-go],[data-cat],[data-act],[data-so],[data-f],[data-s],[data-q],[data-i],[data-rm]');if(!t)return;const d=t.dataset;
+if(d.act=='close'){if(e.target.id=='sheet'||t.tagName=='BUTTON')$('sheet').classList.remove('open');return}
+if(d.so){so=d.so;upd();const b=$('so');if(b)b.textContent=sortLabel();$('sheet').classList.remove('open');return}
+if(d.fav){const n=+d.fav;fav.has(n)?fav.delete(n):fav.add(n);persistFavs();t.classList.toggle('on');return}
+$('sheet').classList.remove('open');
+if(d.id){pid=+d.id;ps={s:0,q:1,i:0};V='p';render()}
+else if(d.cat){filt=d.cat;sq='';V='shop';render()}
+else if(d.go)go(d.go)
+else if(d.f){filt=d.f;render(()=>{})}
+else if(d.s!==undefined){ps.s=+d.s;render(()=>{})}
+else if(d.q){ps.q=Math.max(1,Math.min(20,ps.q+ +d.q));render(()=>{})}
+else if(d.i!==undefined){ps.i=+d.i;render(()=>{})}
+else if(d.act=='back')go('shop')
+else if(d.act=='search'){if(V!='shop'){V='shop';sopen=true;render(()=>{const i=$('sq');i&&i.focus()})}else{sopen=!sopen;if(!sopen)sq='';render(()=>{const i=$('sq');i&&i.focus()})}}
+else if(d.act=='menu')menuSheet()
+else if(d.act=='sort')sortSheet()
+else if(d.act=='cart')cartSheet()
+else if(d.act=='acct')acctSheet()
+else if(d.act=='saved')savedSheet()
+else if(d.act=='add'){const l=cart.find(c=>c.id==pid&&c.s==ps.s);l?l.q=Math.min(20,l.q+ps.q):cart.push({id:pid,s:ps.s,q:Math.min(20,ps.q)});persistCart();head();const sp=t.querySelector('span');sp.textContent='Added to Cart';setTimeout(()=>{sp.textContent='Add to Cart'},1400)}});
+render();
+</script>
+</body>
+</html>
